@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Manager",
+  "version": "1.0.0",
+  "description": "Manage your browser tabs efficiently",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "Tab Manager"
+  },
+  "icons": {
+    "16": "public/icon.svg",
+    "48": "public/icon.svg",
+    "128": "public/icon.svg"
+  }
+}
