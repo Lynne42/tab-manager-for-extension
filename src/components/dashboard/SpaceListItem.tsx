@@ -20,7 +20,7 @@ export default function SpaceItem({ space, isSelected, isDemoSpace, onSpaceClick
       className={`p-3 rounded-lg transition-all ${isSelected
         ? `${getBorderColorClass(space.color)} border-2 bg-gray-700`
         : 'hover:bg-gray-800'
-        }`}
+        } cursor-move`}
     >
       <div className="flex items-center gap-3">
         {/* 图标 - 可点击 */}
