@@ -5,6 +5,7 @@ import { getGroupsBySpaceId } from '../services'
 import { createTab } from '../services'
 import { initDemoData } from '../data'
 import { getSpaceIcon, getBgColorClass, getBorderColorClass } from '../config/constants'
+import logoIcon from '@/assets/ico.png'
 
 export default function Spaces() {
   const [spaces, setSpaces] = useState<Space[]>([])
@@ -102,6 +103,7 @@ export default function Spaces() {
     window.close()
   }
 
+  
   // 过滤工作空间
   const filteredSpaces = spaces.filter((space) =>
     space.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -114,7 +116,7 @@ export default function Spaces() {
       <div className="shrink-0 bg-gray-800 p-4 border-b border-gray-700">
         <div className="flex items-center justify-between mb-3">
           <h1 className="text-xl font-bold flex items-center gap-2">
-            <span>🚀</span>
+            <img src={logoIcon} alt="" width={40} height={40}/>
             <span>Tab Manager</span>
           </h1>
           <button

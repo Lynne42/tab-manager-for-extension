@@ -27,4 +27,11 @@ export default defineConfig({
     crx({ manifest: manifest as any }),
     svgr(),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        dashboard: 'src/dashboard.html',
+      },
+    },
+  },
 })

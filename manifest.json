@@ -13,8 +13,8 @@
     "default_title": "Tab Manager"
   },
   "icons": {
-    "16": "public/icon.svg",
-    "48": "public/icon.svg",
-    "128": "public/icon.svg"
+    "16": "public/ico.png",
+    "48": "public/ico.png",
+    "128": "public/ico.png"
   }
 }
