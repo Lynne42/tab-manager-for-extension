@@ -6,6 +6,8 @@ import type { TabManagerStorage, Space, Group, Tab } from '../types'
 
 /**
  * 创建导出用的数据结构，过滤掉不必要的字段
+ * @param {TabManagerStorage} data - 完整的存储数据
+ * @returns {any} 过滤后的导出数据结构
  */
 function createExportData(data: TabManagerStorage): any {
   const filteredSpaces = data.spaces.map(space => ({
@@ -75,7 +77,10 @@ export function exportData(data: TabManagerStorage, filename: string = 'tab-mana
   }
 }
 
-// 生成 UUID
+/**
+ * 生成 UUID
+ * @returns {string} 随机生成的 UUID 字符串
+ */
 function generateUUID(): string {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     const r = Math.random() * 16 | 0
@@ -84,7 +89,10 @@ function generateUUID(): string {
   })
 }
 
-// 生成时间戳
+/**
+ * 生成当前时间戳
+ * @returns {number} 当前时间的 Unix 时间戳
+ */
 function generateTimestamp(): number {
   return Date.now()
 }

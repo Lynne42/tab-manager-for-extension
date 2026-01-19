@@ -1,6 +1,8 @@
 
 /**
  * 从 URL 中提取域名
+ * @param {string} url - 完整的 URL 字符串
+ * @returns {string} 提取的域名，如果解析失败则返回原始 URL
  */
 export function getDomainFromUrl(url: string): string {
   try {
@@ -22,6 +24,8 @@ export function getDomainFromUrl(url: string): string {
 
 /**
  * 根据 URL 推导 favicon URL
+ * @param {string} url - 网站的 URL
+ * @returns {string} favicon 的 URL，如果无法生成则返回空字符串
  */
 export function getFaviconUrl(url: string): string {
   try {
@@ -47,6 +51,8 @@ export function getFaviconUrl(url: string): string {
 
 /**
  * 从 URL 提取网站标题
+ * @param {string} url - 网站的 URL
+ * @returns {string} 提取的网站标题，如果解析失败则返回原始 URL
  */
 export function getTitleFromUrl(url: string): string {
   try {

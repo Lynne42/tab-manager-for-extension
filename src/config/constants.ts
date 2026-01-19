@@ -38,6 +38,8 @@ export const DEFAULT_COLOR = 'gray'
 
 /**
  * 获取 Space 图标
+ * @param {string} icon - 图标键名
+ * @returns {string} 对应的图标字符串，如果不存在则返回默认图标
  */
 export function getSpaceIcon(icon: string): string {
   return SPACE_ICONS[icon] || DEFAULT_SPACE_ICON
@@ -45,6 +47,8 @@ export function getSpaceIcon(icon: string): string {
 
 /**
  * 获取背景颜色类
+ * @param {string} color - 颜色键名
+ * @returns {string} Tailwind CSS 背景颜色类名
  */
 export function getBgColorClass(color: string): string {
   return COLOR_CLASSES[color]?.bg || COLOR_CLASSES[DEFAULT_COLOR].bg
@@ -52,6 +56,8 @@ export function getBgColorClass(color: string): string {
 
 /**
  * 获取边框颜色类
+ * @param {string} color - 颜色键名
+ * @returns {string} Tailwind CSS 边框颜色类名
  */
 export function getBorderColorClass(color: string): string {
   return COLOR_CLASSES[color]?.border || COLOR_CLASSES[DEFAULT_COLOR].border
@@ -59,6 +65,8 @@ export function getBorderColorClass(color: string): string {
 
 /**
  * 获取文本颜色类
+ * @param {string} color - 颜色键名
+ * @returns {string} Tailwind CSS 文本颜色类名
  */
 export function getTextColorClass(color: string): string {
   return COLOR_CLASSES[color]?.text || COLOR_CLASSES[DEFAULT_COLOR].text

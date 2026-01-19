@@ -237,6 +237,7 @@ export async function reorderTabs(spaceId: string, groupId: string, tabIds: stri
 
 /**
  * 生成唯一 ID
+ * @returns {string} 基于时间戳和随机字符生成的唯一ID
  */
 function generateId(): string {
   return `tab_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`

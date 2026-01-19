@@ -11,6 +11,7 @@ import { createTabs } from '../services/tabService'
 
 /**
  * 检查是否已初始化
+ * @returns {Promise<boolean>} 如果已初始化（有数据）则返回 true，否则返回 false
  */
 export async function isInitialized(): Promise<boolean> {
   const storage = await getStorage()
@@ -19,6 +20,8 @@ export async function isInitialized(): Promise<boolean> {
 
 /**
  * 初始化 Demo 数据
+ * 创建示例工作空间、分组和标签
+ * @returns {Promise<void>} 无返回值
  */
 export async function initDemoData(): Promise<void> {
   // 如果已有数据，不再初始化
@@ -100,6 +103,8 @@ export async function initDemoData(): Promise<void> {
 
 /**
  * 重置所有数据
+ * 清除现有数据并重新初始化 Demo 数据
+ * @returns {Promise<void>} 无返回值
  */
 export async function resetData(): Promise<void> {
   const { clearStorage } = await import('../utils/storage')
@@ -109,6 +114,7 @@ export async function resetData(): Promise<void> {
 
 /**
  * 导出所有数据为 JSON
+ * @returns {Promise<string>} JSON 格式的数据字符串
  */
 export async function exportData(): Promise<string> {
   const storage = await getStorage()
@@ -117,6 +123,8 @@ export async function exportData(): Promise<string> {
 
 /**
  * 从 JSON 导入数据
+ * @param {string} jsonData - JSON 格式的数据字符串
+ * @returns {Promise<void>} 无返回值
  */
 export async function importData(jsonData: string): Promise<void> {
   const data: TabManagerStorage = JSON.parse(jsonData)

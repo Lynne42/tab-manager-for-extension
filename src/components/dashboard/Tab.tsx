@@ -11,6 +11,11 @@ interface TabCardProps {
     onEditTab: () => void
 }
 
+/**
+ * Tab 组件 - 显示单个标签页的卡片
+ * @param {TabCardProps} props - 组件属性
+ * @returns {JSX.Element} Tab 卡片的 React 元素
+ */
 function Tab({ tab, onClick, onDelete, onEditTab }: TabCardProps) {
     return (
         <div className="w-56 flex flex-col justify-between bg-gray-700 rounded-lg overflow-hidden group/tab hover:bg-gray-650 transition-colors">

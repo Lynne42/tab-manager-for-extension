@@ -137,6 +137,7 @@ export async function reorderSpaces(spaceIds: string[]): Promise<void> {
 
 /**
  * 生成唯一 ID
+ * @returns {string} 基于时间戳和随机字符生成的唯一ID
  */
 function generateId(): string {
   return `space_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`
