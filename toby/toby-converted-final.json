@@ -1,0 +1,513 @@
+{
+  "version": 1,
+  "spaces": [
+    {
+      "name": "workspace",
+      "description": "",
+      "groups": [
+        {
+          "id": "2736b1b2-e657-4277-9cb9-da9540098aef",
+          "name": "北京移动",
+          "tabs": [
+            {
+              "id": "049b9e68-a418-4720-ac1d-4028c18c83dd",
+              "title": "测试环境",
+              "description": "北京移动大模型",
+              "url": "http://172.18.1.128:32024/user/login"
+            },
+            {
+              "id": "cc4a4ccb-932b-40ea-a40a-67eb3271e7ad",
+              "title": "﻿⁡‬​​​‌‬⁤​⁢⁤‬⁤​⁣‬​​​⁢⁣⁡​⁣‍⁣⁣⁢‍⁣‍⁤⁡‬​​⁤​﻿⁡﻿⁡﻿​​⁡​‬需求文档 ",
+              "description": "﻿⁡‬​​​‌‬⁤​⁢⁤‬⁤​⁣‬​​​⁢⁣⁡​⁣‍⁣⁣⁢‍⁣‍⁤⁡‬​​⁤​﻿⁡﻿⁡﻿​​⁡​‬北京移动无线大模型需求文档 - 飞书云文档",
+              "url": "https://realai.feishu.cn/docx/MYgUdiczvoB7KzxRfFzc90vLnHd"
+            },
+            {
+              "id": "7530f1a8-d506-441e-8a73-8ca4bc343606",
+              "title": "原型",
+              "description": "中移无线大模型",
+              "url": "https://modao.cc/proto/DFXNMhpsz2yryRoXDij8/sharing?view_mode=read_only&screen=rbpUqMSbQmuZFUAz6"
+            },
+            {
+              "id": "f46ae357-9303-4cc6-abc0-d7381d313a4b",
+              "title": "代码仓库",
+              "description": "Commits · dev-5.3 · LLM / butterfly-fe-beijing-mobile · GitLab",
+              "url": "https://git.real-ai.cn/llm/butterfly-fe-china-mobile/-/commits/dev-5.3"
+            },
+            {
+              "id": "b823d5bc-0adc-4105-9011-3236c018bbbf",
+              "title": "设计稿-Figma",
+              "description": "中移动基站 – Figma",
+              "url": "https://www.figma.com/design/DoZ6UWGrawxsUAuHUm6V1P/%E4%B8%AD%E7%A7%BB%E5%8A%A8%E5%9F%BA%E7%AB%99?node-id=445-5833&t=WHLfOv4LnUS5ffK5-0"
+            },
+            {
+              "id": "b94e0e58-0184-4fd2-bcdc-f48a41e5dffa",
+              "title": "设计稿-月维",
+              "description": "Moonvy · 月维",
+              "url": "https://moonvy.com/project/4343d92e-8aca-4e22-8055-eacb92a1017b/ccccd4c7-1d4d-4d56-a6fe-7207fcee8490/4476858b-3d67-4945-8dfe-7eec59e78dca"
+            }
+          ]
+        },
+        {
+          "id": "a780a189-d9a6-4e30-9231-357849f13786",
+          "name": "安环出题",
+          "tabs": [
+            {
+              "id": "a0feb471-a0a7-44c9-b0bd-8e42734613d0",
+              "title": "移动端代码仓库：LLM / butterfly-fe-exam-mobile · GitLab",
+              "description": "LLM / butterfly-fe-exam-mobile · GitLab",
+              "url": "https://git.real-ai.cn/llm/butterfly-fe-exam-mobile/-/tree/dev-3.3"
+            },
+            {
+              "id": "5741089a-30f6-4454-911b-eee6edc19c1d",
+              "title": "pc端代码仓库：LLM / butterfly-fe-exam-admin · GitLab",
+              "description": "LLM / butterfly-fe-exam-admin · GitLab",
+              "url": "https://git.real-ai.cn/llm/butterfly-fe-exam-admin"
+            },
+            {
+              "id": "091b2803-0c8c-4b29-8c05-e2f299ad2e4a",
+              "title": "系统说明：▶️ 安环出题考试系统",
+              "description": "▶️ 安环出题考试系统",
+              "url": "https://mastergo.com/prototype/165261202642433?zs=0.40360484085410436&pageId=3%3A2680&layerId=62%3A601"
+            },
+            {
+              "id": "e7ffa411-e3b2-4eef-9b4c-e2b9bd2e51e5",
+              "title": "接口文档",
+              "description": "ah_exam",
+              "url": "http://172.18.1.136:8100/docs#/"
+            },
+            {
+              "id": "8b9b0414-1290-4405-8e7b-2cb90ab628de",
+              "title": "pc端-测试环境",
+              "description": "题库",
+              "url": "http://172.18.1.136:8001/chuti/llm/questionsBank"
+            },
+            {
+              "id": "a986879b-8934-4f12-a7be-0470e7dca254",
+              "title": "移动端-测试环境",
+              "description": "安环考试",
+              "url": "http://172.18.1.136:8002/login.html?exam_id=163e3950-73b9-4a65-a43d-6b0b27eb284b&type=project"
+            },
+            {
+              "id": "862e541e-00a1-42fd-8346-2c7ad68745ba",
+              "title": "设计稿-月维",
+              "description": "Moonvy · 月维",
+              "url": "https://moonvy.com/project/588e9194-a8da-47c6-a69b-ff1a8bd3d8d8/d5731804-c62b-4fba-a3f2-0cff75c3c149/5d4e7cff-2286-4d04-b13d-e7e641239c15"
+            },
+            {
+              "id": "a8e4c44e-0341-4e16-a4c0-e058ce2f0a32",
+              "title": "扩展程序",
+              "description": "",
+              "url": "chrome://extensions/"
+            }
+          ]
+        },
+        {
+          "id": "3289d0c3-4ff0-4513-9f82-ec77be80ead1",
+          "name": "website",
+          "tabs": [
+            {
+              "id": "0fb974ad-70d1-43ad-89d7-28630f72e018",
+              "title": "JumpServer 开源堡垒机",
+              "description": "我的资产 - JumpServer 开源堡垒机",
+              "url": "http://jms.real-ai.cn/ui/#/workbench/assets"
+            }
+          ]
+        },
+        {
+          "id": "0f777854-99fb-4ad2-911d-48d4dbd2f9e9",
+          "name": "Desserts",
+          "tabs": []
+        },
+        {
+          "id": "3e3d943e-52ac-4951-b6a9-043eaaa2995d",
+          "name": "Dinners",
+          "tabs": []
+        },
+        {
+          "id": "9dc8a9c0-0789-4a57-8225-047ca0f44ab8",
+          "name": "Lunches",
+          "tabs": []
+        },
+        {
+          "id": "671e9663-d17f-4bfe-ae3c-25a2b7b1eedc",
+          "name": "Breakfasts",
+          "tabs": []
+        },
+        {
+          "id": "0aa92675-3314-4a8f-be80-a927b7baf79a",
+          "name": "Favorites",
+          "tabs": []
+        },
+        {
+          "id": "e899ad94-cb8e-4a08-98ee-a3eac39c24f4",
+          "name": "Bucket List",
+          "tabs": []
+        },
+        {
+          "id": "a345872a-9510-4989-865a-1d380e615bea",
+          "name": "To purchase for trip",
+          "tabs": []
+        },
+        {
+          "id": "17ea7995-10c7-4e2f-b1bf-f77c6b0a7bd6",
+          "name": "Documentation",
+          "tabs": []
+        },
+        {
+          "id": "debb3499-6167-43f5-b1cc-0f97da277c78",
+          "name": "Upcoming Trips",
+          "tabs": []
+        },
+        {
+          "id": "009b94ae-64b5-4cb4-9d00-5ec7f1911d75",
+          "name": "TV Shows",
+          "tabs": []
+        },
+        {
+          "id": "59e3a125-2c17-4acf-8a82-1b4c8d20f8cf",
+          "name": "Movies",
+          "tabs": []
+        },
+        {
+          "id": "cda5a8de-5dca-4f1b-b9cc-f410f2a5791b",
+          "name": "Music",
+          "tabs": [
+            {
+              "id": "5dc461fa-d0d6-4fe4-93a7-8585f57c604e",
+              "title": "Apple music",
+              "description": "Apple music",
+              "url": "https://music.apple.com"
+            },
+            {
+              "id": "c558a1b6-3626-4aca-98bb-2b22a2cd9506",
+              "title": "Spotify",
+              "description": "Spotify",
+              "url": "https://open.spotify.com"
+            },
+            {
+              "id": "4792230b-23d7-4414-b4e3-30355b84b6b6",
+              "title": "YouTube",
+              "description": "YouTube",
+              "url": "https://www.youtube.com"
+            }
+          ]
+        },
+        {
+          "id": "0cc049a6-10cd-4ddf-abe1-a7de3db52d45",
+          "name": "DIY",
+          "tabs": []
+        },
+        {
+          "id": "3cf276f6-8126-4a4f-a1b8-fc75b342c268",
+          "name": "Tutorials",
+          "tabs": []
+        },
+        {
+          "id": "d7f6be02-1ac3-418e-a088-90f7d4a95ceb",
+          "name": "Inspiration",
+          "tabs": []
+        },
+        {
+          "id": "b07131e6-5524-4d8e-88c8-397986b4faf7",
+          "name": "Finances",
+          "tabs": []
+        },
+        {
+          "id": "40b80ded-2163-4049-9dc3-df06de79d941",
+          "name": "Bills",
+          "tabs": []
+        },
+        {
+          "id": "8eb15ed3-e908-4a5e-a39d-c4f47f733c7b",
+          "name": "Subscriptions",
+          "tabs": []
+        },
+        {
+          "id": "63e2f882-4a00-4883-aaba-a1d66281b0a0",
+          "name": "Access Toby",
+          "tabs": [
+            {
+              "id": "553ed5f8-b3ff-4023-8d8b-592faadce374",
+              "title": "IOS Mobile",
+              "description": "IOS Mobile",
+              "url": "https://apps.apple.com/ca/app/toby-for-tabs/id6450715143"
+            },
+            {
+              "id": "914d1585-f6e8-4dd2-b44f-75768a18a68b",
+              "title": "Android Mobile",
+              "description": "Android Mobile",
+              "url": "https://play.google.com/store/apps/details?id=co.axiomzen.toby&hl=en_CA"
+            }
+          ]
+        },
+        {
+          "id": "1909dc99-34cd-4f98-9b70-f69f1371af79",
+          "name": "Join the community",
+          "tabs": [
+            {
+              "id": "42de7478-75de-4d49-baf4-11fd489d9b64",
+              "title": "Discord",
+              "description": "Join our community!",
+              "url": "https://discord.com/invite/swbqxAJCUD"
+            },
+            {
+              "id": "db7248fd-ef6f-45e0-8c94-a9d228bcee11",
+              "title": "Nolt",
+              "description": "Nolt",
+              "url": "https://feedback.gettoby.com"
+            },
+            {
+              "id": "29d8845c-7ecc-496f-be61-8094e3559cc8",
+              "title": "Toby Twitter",
+              "description": "Keep up to date",
+              "url": "https://twitter.com/TobyForTabs/"
+            }
+          ]
+        },
+        {
+          "id": "cc069283-a881-421e-8a96-233e0ea71d70",
+          "name": "How to Invite",
+          "tabs": [
+            {
+              "id": "6549b360-7eb4-4150-b7cf-048274dc3603",
+              "title": "Invite to Organization",
+              "description": "Invite to Organization",
+              "url": "https://help.gettoby.com/support/solutions/articles/66000494303?utm_source=toby_premade"
+            },
+            {
+              "id": "bbe49fd2-9b27-4797-974d-e1f0b3d0d4df",
+              "title": "Invite to Space",
+              "description": "Invite to Space",
+              "url": "https://help.gettoby.com/support/solutions/articles/66000494304?utm_source=toby_premade"
+            }
+          ]
+        },
+        {
+          "id": "ba6ab0b9-f776-4b74-b0f6-7885ef142aa4",
+          "name": "Top Toby Features",
+          "tabs": [
+            {
+              "id": "e33f0119-39a5-4f18-aef4-4a90fc498259",
+              "title": "Save Session",
+              "description": "Save Session",
+              "url": "https://help.gettoby.com/support/solutions/articles/66000521580?utm_source=toby_premade"
+            },
+            {
+              "id": "f35ff679-e97d-4e7a-8e3c-a4b241dedba9",
+              "title": "To/Links",
+              "description": "Create custom Links",
+              "url": "https://www.gettoby.com/blog/unlocking-the-power-of-toby-links?utm_source=toby_premade"
+            },
+            {
+              "id": "d4f1a187-df7a-4c9a-9f22-ee607d25cd50",
+              "title": "Next",
+              "description": "Prioritize your tabs",
+              "url": "https://www.gettoby.com/blog/introducing-next?utm_source=toby_premade"
+            },
+            {
+              "id": "6ea2be6b-37bd-4147-9ec0-604aea94ed7b",
+              "title": "Search",
+              "description": "Find your tabs quickly",
+              "url": "https://www.gettoby.com/blog/toby-search?utm_source=toby_premade"
+            },
+            {
+              "id": "ff252780-2760-4eb8-b9a6-8eb1e4a837d2",
+              "title": "Add notes to collections!",
+              "description": "",
+              "url": "/note.html"
+            }
+          ]
+        },
+        {
+          "id": "ee21e837-f089-482d-bc00-b870c31beebc",
+          "name": "Getting started with Toby",
+          "tabs": [
+            {
+              "id": "559d2795-3f3b-4752-9483-cf9f0c2e393f",
+              "title": "Toby basics",
+              "description": "Video",
+              "url": "https://help.gettoby.com/support/solutions/66000120122?utm_source=toby_premade"
+            },
+            {
+              "id": "6ee30175-abd8-4690-877f-fa584fb993dc",
+              "title": "Help Center",
+              "description": "Find your answers",
+              "url": "https://help.gettoby.com/support/home?utm_source=toby_premade"
+            }
+          ]
+        },
+        {
+          "id": "e5c9a6d8-763e-4e2a-b6da-03b1401f75a4",
+          "name": "Social",
+          "tabs": [
+            {
+              "id": "1ededd6c-8335-49af-916a-71e876951d7e",
+              "title": "Instagram",
+              "description": "Instagram",
+              "url": "https://www.instagram.com"
+            },
+            {
+              "id": "326abd58-7d3d-4c42-9f29-911867388275",
+              "title": "X",
+              "description": "X",
+              "url": "https://x.com"
+            },
+            {
+              "id": "a84588e7-310c-4fba-a769-84273f174d5a",
+              "title": "Facebook",
+              "description": "Facebook",
+              "url": "https://www.facebook.com"
+            }
+          ]
+        },
+        {
+          "id": "888ee08a-360d-4016-a5b5-e4f4d059af0a",
+          "name": "To read this week",
+          "tabs": []
+        },
+        {
+          "id": "2a2f9917-9193-4c53-8cce-474da111b109",
+          "name": "To-Do",
+          "tabs": []
+        },
+        {
+          "id": "09acf59f-b02d-456f-be19-7c46636c9b83",
+          "name": "Everyday",
+          "tabs": []
+        },
+        {
+          "id": "298926df-b3df-4ed5-a16c-7b0051bb8074",
+          "name": "信通院-23-算法安全专项",
+          "tabs": [
+            {
+              "id": "ec742d73-7ccc-42d3-b59a-170c2a489a2e",
+              "title": "原型稿-安全专项",
+              "description": "安全专项 - 即时设计",
+              "url": "https://js.design/f/gUuoZ2?p=2IuZH5yPxc&mode=design"
+            }
+          ]
+        },
+        {
+          "id": "9986dc43-741c-48b0-9eb1-fd134ed7f5e6",
+          "name": "政策大脑- caterpillar-fe",
+          "tabs": [
+            {
+              "id": "a11491dd-42d6-4fee-b8e2-e36447f6af4b",
+              "title": "‌⁣⁣﻿⁢⁤⁡⁤⁡‌⁡⁡⁢⁡‍⁣⁣⁢⁤‬​⁢‍⁢​⁣⁣‬⁡‬﻿‍⁣‬﻿‍‌​​‬‬​⁣‍⁢⁤​‍‌‍需求文档-标品迭代：大模型办公助手",
+              "description": "‌⁣⁣﻿⁢⁤⁡⁤⁡‌⁡⁡⁢⁡‍⁣⁣⁢⁤‬​⁢‍⁢​⁣⁣‬⁡‬﻿‍⁣‬﻿‍‌​​‬‬​⁣‍⁢⁤​‍‌‍标品迭代（大模型办公助手）产品需求文档0331 - 飞书云文档",
+              "url": "https://realai.feishu.cn/wiki/SvC7wMD75imxigkSne5c5RA6nG0"
+            },
+            {
+              "id": "e2baa5c1-e99d-421f-b3e0-cfee1612c767",
+              "title": "政策大脑 – Figma",
+              "description": "",
+              "url": "https://www.figma.com/design/cnTCOGy32XnMxUxjED44C9/%E6%94%BF%E7%AD%96%E5%A4%A7%E8%84%91?node-id=1885-8164&p=f&t=zkUK2fDWmFZVzkNk-0"
+            },
+            {
+              "id": "ba8d54bf-bfbe-4aed-bd6a-787802c4011d",
+              "title": "支撑平台地址",
+              "description": "支撑平台",
+              "url": "http://172.18.1.136:32604/llm/application/center"
+            },
+            {
+              "id": "8d55a21c-e009-406a-8b4b-90b8a1e95be5",
+              "title": "Agent 接口文档",
+              "description": "Agent",
+              "url": "http://172.18.1.136:31772/docs#/docinsight"
+            },
+            {
+              "id": "c5b32840-9436-4f76-9287-5f29be432402",
+              "title": "代码仓库：caterpillar-fe · GitLab",
+              "description": "Pipelines · LLM / caterpillar-fe · GitLab",
+              "url": "https://git.real-ai.cn/llm/caterpillar-fe/pipelines"
+            },
+            {
+              "id": "70da2d1a-2296-446b-8db5-49be1104a927",
+              "title": "⁣⁡⁣⁡​‍⁣⁣⁣⁤⁣‬​⁤⁡​​⁢‍⁡⁤⁤‍​‍﻿‍​⁢​‬⁢⁡⁤‍​​‍⁡⁡‬​﻿⁤⁣⁢​⁤⁣标品bug list【5月迭代版本】",
+              "description": "⁣⁡⁣⁡​‍⁣⁣⁣⁤⁣‬​⁤⁡​​⁢‍⁡⁤⁤‍​‍﻿‍​⁢​‬⁢⁡⁤‍​​‍⁡⁡‬​﻿⁤⁣⁢​⁤⁣标品（大模型办公助手）bug list【5月迭代版本】 - 飞书云文档",
+              "url": "https://realai.feishu.cn/wiki/HaejwJu6LiW2X8kBDnwczFAZn67"
+            },
+            {
+              "id": "06ed340c-f600-4783-871c-2fc0edc542db",
+              "title": "政策大脑-第一版",
+              "description": "政策大脑-第一版",
+              "url": "http://172.18.1.182:32427/llm/writeHelper"
+            }
+          ]
+        },
+        {
+          "id": "19249a32-23d9-4ae3-b19f-46fa16fe67ad",
+          "name": "京策",
+          "tabs": [
+            {
+              "id": "07ce3a55-42ed-4026-a085-c45774fb70b4",
+              "title": "经开区-政策大脑-原型",
+              "description": "经开区-政策大脑-原型",
+              "url": "https://modao.cc/proto/JJLZDCzxsjqeg5Dzy9K1SA/sharing?view_mode=read_only"
+            },
+            {
+              "id": "da435913-603b-41e1-b456-ced5d2ad7872",
+              "title": "经开区-政策大脑–设计稿-Figma",
+              "description": "经开区-政策大脑–设计稿-Figma",
+              "url": "https://www.figma.com/design/fAiYKvsrVujjFf6aLEI4Lk/%E7%BB%8F%E5%BC%80%E5%8C%BA%E6%94%BF%E7%AD%96%E5%A4%A7%E8%84%91%EF%BC%88%E9%A1%B9%EF%BC%89?node-id=410-523&node-type=frame&t=qcyv818iS67qwzBB-0"
+            },
+            {
+              "id": "867a3300-34e0-4859-93b8-a75c65afa2a0",
+              "title": "经开区-政策大脑-月维",
+              "description": "经开区-政策大脑-月维",
+              "url": "https://moonvy.com/project/0a163212-131c-47f9-9b12-b367c2c323f2/001e7462-fa3e-4ef8-8f3c-23669893b192/7e4a7e70-788f-4d7a-bbd3-6dd278e427b3"
+            },
+            {
+              "id": "5f658e30-b6fb-4ba7-a645-3558d2a3e681",
+              "title": "京策-知识-线上",
+              "description": "123.56.174.245:30083",
+              "url": "http://123.56.174.245:30083/"
+            },
+            {
+              "id": "efc75b8f-e944-41bf-b85e-be3b561e0ccd",
+              "title": "经开区站立会 - 飞书云文档",
+              "description": "",
+              "url": "https://realai.feishu.cn/wiki/Two8wtTlNisg6BkEVCHcsjz9njs?sheet=igNpIO&table=tblB3uzeqSnPZH47&view=vewQnCqXO6"
+            },
+            {
+              "id": "45e4878a-b4da-406e-bb54-ba609fb27c9f",
+              "title": "经开区-政策大脑-开发环境",
+              "description": "经开区-政策大脑-开发环境",
+              "url": "http://172.18.1.136:32100/policyQA"
+            },
+            {
+              "id": "89a0c0e7-2ca0-487b-a90b-1c139fed6d0e",
+              "title": "经开区-政策大脑-测试环境",
+              "description": "经开区-政策大脑-测试环境",
+              "url": "http://172.18.1.136:32110/policyQA"
+            },
+            {
+              "id": "cade8c32-3471-4d90-a885-eba674f28df0",
+              "title": "接口文档",
+              "description": "policy_brain_service",
+              "url": "http://172.18.1.136:32101/docs#/%E5%92%A8%E8%AF%A2%E5%92%8C%E8%BF%9B%E5%BA%A6%E9%97%AE%E7%AD%94/qaoptions_api_v1_qa_chat_qaoptions_get"
+            },
+            {
+              "id": "0621c13f-d020-490b-8582-1d50e9a844f0",
+              "title": "京办开发者平台",
+              "description": "",
+              "url": "https://open.jzb.beijing.gov.cn/web#/developDocument?Key=undefined&workid=undefined"
+            },
+            {
+              "id": "c9c0a1ab-67c7-4ed3-96ed-1cf6316521ef",
+              "title": "‍⁣​‬‌⁢⁣‬⁡​⁤⁢​‬﻿​⁡⁤‌﻿‬‬​⁤⁢‌⁢‍‍​﻿‬⁣⁣⁤‌‍﻿⁡⁤​⁤‌⁤‍‌​⁣‌‬政策计算器标签库 - 飞书云文档",
+              "description": "",
+              "url": "https://realai.feishu.cn/wiki/CDaewBewiiG3hjkw43tcTr9Snah"
+            },
+            {
+              "id": "f8674182-24c0-4d6b-bddd-01f0877a1049",
+              "title": "京策 - 政策预制",
+              "description": "京策 - 政策预制",
+              "url": "http://172.18.1.128:30110/policyPlan/prefabricate/generate?id=341"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

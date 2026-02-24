@@ -1,0 +1,794 @@
+{
+  "spaces": [
+    {
+      "name": "workspace",
+      "description": "",
+      "icon": "workspace",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "北京移动",
+          "tabs": [
+            {
+              "url": "http://172.18.1.128:32024/user/login",
+              "title": "测试环境",
+              "favIconUrl": "http://172.18.1.128:32024/favicon.ico",
+              "description": "北京移动大模型",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://realai.feishu.cn/docx/MYgUdiczvoB7KzxRfFzc90vLnHd",
+              "title": "﻿⁡‬​​​‌‬⁤​⁢⁤‬⁤​⁣‬​​​⁢⁣⁡​⁣‍⁣⁣⁢‍⁣‍⁤⁡‬​​⁤​﻿⁡﻿⁡﻿​​⁡​‬需求文档 ",
+              "favIconUrl": "https://realai.feishu.cn/favicon.ico",
+              "description": "﻿⁡‬​​​‌‬⁤​⁢⁤‬⁤​⁣‬​​​⁢⁣⁡​⁣‍⁣⁣⁢‍⁣‍⁤⁡‬​​⁤​﻿⁡﻿⁡﻿​​⁡​‬北京移动无线大模型需求文档 - 飞书云文档",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://modao.cc/proto/DFXNMhpsz2yryRoXDij8/sharing?view_mode=read_only&screen=rbpUqMSbQmuZFUAz6",
+              "title": "原型",
+              "favIconUrl": "https://modao.cc/favicon.ico",
+              "description": "中移无线大模型",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://git.real-ai.cn/llm/butterfly-fe-china-mobile/-/commits/dev-5.3",
+              "title": "代码仓库",
+              "favIconUrl": "https://git.real-ai.cn/favicon.ico",
+              "description": "Commits · dev-5.3 · LLM / butterfly-fe-beijing-mobile · GitLab",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.figma.com/design/DoZ6UWGrawxsUAuHUm6V1P/%E4%B8%AD%E7%A7%BB%E5%8A%A8%E5%9F%BA%E7%AB%99?node-id=445-5833&t=WHLfOv4LnUS5ffK5-0",
+              "title": "设计稿-Figma",
+              "favIconUrl": "https://www.figma.com/favicon.ico",
+              "description": "中移动基站 – Figma",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://moonvy.com/project/4343d92e-8aca-4e22-8055-eacb92a1017b/ccccd4c7-1d4d-4d56-a6fe-7207fcee8490/4476858b-3d67-4945-8dfe-7eec59e78dca",
+              "title": "设计稿-月维",
+              "favIconUrl": "https://moonvy.com/favicon.ico",
+              "description": "Moonvy · 月维",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "安环出题",
+          "tabs": [
+            {
+              "url": "https://git.real-ai.cn/llm/butterfly-fe-exam-mobile/-/tree/dev-3.3",
+              "title": "移动端代码仓库：LLM / butterfly-fe-exam-mobile · GitLab",
+              "favIconUrl": "https://git.real-ai.cn/favicon.ico",
+              "description": "LLM / butterfly-fe-exam-mobile · GitLab",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://git.real-ai.cn/llm/butterfly-fe-exam-admin",
+              "title": "pc端代码仓库：LLM / butterfly-fe-exam-admin · GitLab",
+              "favIconUrl": "https://git.real-ai.cn/favicon.ico",
+              "description": "LLM / butterfly-fe-exam-admin · GitLab",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://mastergo.com/prototype/165261202642433?zs=0.40360484085410436&pageId=3%3A2680&layerId=62%3A601",
+              "title": "系统说明：▶️ 安环出题考试系统",
+              "favIconUrl": "https://mastergo.com/favicon.ico",
+              "description": "▶️ 安环出题考试系统",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:8100/docs#/",
+              "title": "接口文档",
+              "favIconUrl": "http://172.18.1.136:8100/favicon.ico",
+              "description": "ah_exam",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:8001/chuti/llm/home?code=admin",
+              "title": "pc端-测试环境",
+              "favIconUrl": "http://172.18.1.136:8001/favicon.ico",
+              "description": "题库",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:8002/login.html?exam_id=163e3950-73b9-4a65-a43d-6b0b27eb284b&type=project",
+              "title": "移动端-测试环境",
+              "favIconUrl": "http://172.18.1.136:8002/favicon.ico",
+              "description": "安环考试",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://moonvy.com/project/588e9194-a8da-47c6-a69b-ff1a8bd3d8d8/d5731804-c62b-4fba-a3f2-0cff75c3c149/5d4e7cff-2286-4d04-b13d-e7e641239c15",
+              "title": "设计稿-月维",
+              "favIconUrl": "https://moonvy.com/favicon.ico",
+              "description": "Moonvy · 月维",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "chrome://extensions/",
+              "title": "扩展程序",
+              "favIconUrl": "chrome://extensions/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:30000/llm/application/canvas?uuid=ba9a512534c549fb8e33c303d93222e3&workflow_uuid=7e587426-14ff-4e8d-a831-8ea2fd1d5d0f&canvas_type=1",
+              "title": "支撑平台",
+              "favIconUrl": "http://172.18.1.136:30000/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "website",
+          "tabs": [
+            {
+              "url": "http://jms.real-ai.cn/ui/#/workbench/assets",
+              "title": "JumpServer 开源堡垒机",
+              "favIconUrl": "http://jms.real-ai.cn/favicon.ico",
+              "description": "我的资产 - JumpServer 开源堡垒机",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "信通院-23-算法安全专项",
+          "tabs": [
+            {
+              "url": "https://js.design/f/gUuoZ2?p=2IuZH5yPxc&mode=design",
+              "title": "原型稿-安全专项",
+              "favIconUrl": "https://js.design/favicon.ico",
+              "description": "安全专项 - 即时设计",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "政策大脑- caterpillar-fe",
+          "tabs": [
+            {
+              "url": "https://realai.feishu.cn/wiki/SvC7wMD75imxigkSne5c5RA6nG0",
+              "title": "‌⁣⁣﻿⁢⁤⁡⁤⁡‌⁡⁡⁢⁡‍⁣⁣⁢⁤‬​⁢‍⁢​⁣⁣‬⁡‬﻿‍⁣‬﻿‍‌​​‬‬​⁣‍⁢⁤​‍‌‍需求文档-标品迭代：大模型办公助手",
+              "favIconUrl": "https://realai.feishu.cn/favicon.ico",
+              "description": "‌⁣⁣﻿⁢⁤⁡⁤⁡‌⁡⁡⁢⁡‍⁣⁣⁢⁤‬​⁢‍⁢​⁣⁣‬⁡‬﻿‍⁣‬﻿‍‌​​‬‬​⁣‍⁢⁤​‍‌‍标品迭代（大模型办公助手）产品需求文档0331 - 飞书云文档",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.figma.com/design/cnTCOGy32XnMxUxjED44C9/%E6%94%BF%E7%AD%96%E5%A4%A7%E8%84%91?node-id=1885-8164&p=f&t=zkUK2fDWmFZVzkNk-0",
+              "title": "政策大脑 – Figma",
+              "favIconUrl": "https://www.figma.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:32604/llm/application/center",
+              "title": "支撑平台地址",
+              "favIconUrl": "http://172.18.1.136:32604/favicon.ico",
+              "description": "支撑平台",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:31772/docs#/docinsight",
+              "title": "Agent 接口文档",
+              "favIconUrl": "http://172.18.1.136:31772/favicon.ico",
+              "description": "Agent",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://git.real-ai.cn/llm/caterpillar-fe/pipelines",
+              "title": "代码仓库：caterpillar-fe · GitLab",
+              "favIconUrl": "https://git.real-ai.cn/favicon.ico",
+              "description": "Pipelines · LLM / caterpillar-fe · GitLab",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://realai.feishu.cn/wiki/HaejwJu6LiW2X8kBDnwczFAZn67",
+              "title": "⁣⁡⁣⁡​‍⁣⁣⁣⁤⁣‬​⁤⁡​​⁢‍⁡⁤⁤‍​‍﻿‍​⁢​‬⁢⁡⁤‍​​‍⁡⁡‬​﻿⁤⁣⁢​⁤⁣标品bug list【5月迭代版本】",
+              "favIconUrl": "https://realai.feishu.cn/favicon.ico",
+              "description": "⁣⁡⁣⁡​‍⁣⁣⁣⁤⁣‬​⁤⁡​​⁢‍⁡⁤⁤‍​‍﻿‍​⁢​‬⁢⁡⁤‍​​‍⁡⁡‬​﻿⁤⁣⁢​⁤⁣标品（大模型办公助手）bug list【5月迭代版本】 - 飞书云文档",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.182:32427/llm/writeHelper",
+              "title": "政策大脑-第一版",
+              "favIconUrl": "http://172.18.1.182:32427/favicon.ico",
+              "description": "政策大脑-第一版",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "京策",
+          "tabs": [
+            {
+              "url": "https://modao.cc/proto/JJLZDCzxsjqeg5Dzy9K1SA/sharing?view_mode=read_only",
+              "title": "经开区-政策大脑-原型",
+              "favIconUrl": "https://modao.cc/favicon.ico",
+              "description": "经开区-政策大脑-原型",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.figma.com/design/fAiYKvsrVujjFf6aLEI4Lk/%E7%BB%8F%E5%BC%80%E5%8C%BA%E6%94%BF%E7%AD%96%E5%A4%A7%E8%84%91%EF%BC%88%E9%A1%B9%EF%BC%89?node-id=410-523&node-type=frame&t=qcyv818iS67qwzBB-0",
+              "title": "经开区-政策大脑–设计稿-Figma",
+              "favIconUrl": "https://www.figma.com/favicon.ico",
+              "description": "经开区-政策大脑–设计稿-Figma",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://moonvy.com/project/0a163212-131c-47f9-9b12-b367c2c323f2/001e7462-fa3e-4ef8-8f3c-23669893b192/7e4a7e70-788f-4d7a-bbd3-6dd278e427b3",
+              "title": "经开区-政策大脑-月维",
+              "favIconUrl": "https://moonvy.com/favicon.ico",
+              "description": "经开区-政策大脑-月维",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://123.56.174.245:30083/",
+              "title": "京策-知识-线上",
+              "favIconUrl": "http://123.56.174.245:30083/favicon.ico",
+              "description": "123.56.174.245:30083",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://realai.feishu.cn/wiki/Two8wtTlNisg6BkEVCHcsjz9njs?sheet=igNpIO&table=tblB3uzeqSnPZH47&view=vewQnCqXO6",
+              "title": "经开区站立会 - 飞书云文档",
+              "favIconUrl": "https://realai.feishu.cn/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:32100/policyQA",
+              "title": "经开区-政策大脑-开发环境",
+              "favIconUrl": "http://172.18.1.136:32100/favicon.ico",
+              "description": "经开区-政策大脑-开发环境",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:32110/policyQA",
+              "title": "经开区-政策大脑-测试环境",
+              "favIconUrl": "http://172.18.1.136:32110/favicon.ico",
+              "description": "经开区-政策大脑-测试环境",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.136:32101/docs#/%E5%92%A8%E8%AF%A2%E5%92%8C%E8%BF%9B%E5%BA%A6%E9%97%AE%E7%AD%94/qaoptions_api_v1_qa_chat_qaoptions_get",
+              "title": "接口文档",
+              "favIconUrl": "http://172.18.1.136:32101/favicon.ico",
+              "description": "policy_brain_service",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://open.jzb.beijing.gov.cn/web#/developDocument?Key=undefined&workid=undefined",
+              "title": "京办开发者平台",
+              "favIconUrl": "https://open.jzb.beijing.gov.cn/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://realai.feishu.cn/wiki/CDaewBewiiG3hjkw43tcTr9Snah",
+              "title": "‍⁣​‬‌⁢⁣‬⁡​⁤⁢​‬﻿​⁡⁤‌﻿‬‬​⁤⁢‌⁢‍‍​﻿‬⁣⁣⁤‌‍﻿⁡⁤​⁤‌⁤‍‌​⁣‌‬政策计算器标签库 - 飞书云文档",
+              "favIconUrl": "https://realai.feishu.cn/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "http://172.18.1.128:30110/policyPlan/prefabricate/generate?id=341",
+              "title": "京策 - 政策预制",
+              "favIconUrl": "http://172.18.1.128:30110/favicon.ico",
+              "description": "京策 - 政策预制",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "demo-workspace",
+      "description": "demo workspace",
+      "icon": "work",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "开发工具",
+          "color": "purple",
+          "tabs": [
+            {
+              "url": "https://github.com",
+              "title": "github",
+              "description": "Code collaboration platform for developers",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://stackoverflow.com",
+              "title": "stackoverflow",
+              "description": "Q&A site for programmers",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://vitejs.dev",
+              "title": "vite",
+              "description": "Fast and lightweight build tool for modern web projects",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "文档",
+          "color": "green",
+          "tabs": [
+            {
+              "url": "https://developer.mozilla.org",
+              "title": "developer",
+              "description": "Web development documentation and tutorials",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://react.dev",
+              "title": "react",
+              "description": "JavaScript library for building user interfaces",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tools",
+      "description": "",
+      "icon": "workspace",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "tools",
+          "tabs": [
+            {
+              "url": "https://ant-design.antgroup.com/components/dropdown-cn",
+              "title": "ant-design",
+              "favIconUrl": "https://ant-design.antgroup.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://tailwindcss.com/docs/font-size",
+              "title": "Tailwind CSS",
+              "favIconUrl": "https://tailwindcss.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://chatgpt.com/c/673d3d6c-3980-8008-b4e0-4a45c53996ea",
+              "title": "ChatGPT",
+              "favIconUrl": "https://chatgpt.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://date-fns.org/v4.1.0/docs/parse",
+              "title": "date-fns",
+              "favIconUrl": "https://date-fns.org/favicon.ico",
+              "description": "modern JavaScript date utility library",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "chrome://newtab/",
+              "title": "Toby",
+              "favIconUrl": "chrome://newtab/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "read",
+          "tabs": [
+            {
+              "url": "https://www.joshwcomeau.com/react/server-components/",
+              "title": "Josh个人网站-高质量的文章内容",
+              "favIconUrl": "https://www.joshwcomeau.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://janhesters.com/blog",
+              "title": "Jan Hesters高质量博客",
+              "favIconUrl": "https://janhesters.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "websit",
+          "tabs": [
+            {
+              "url": "https://www.freelancer.com/dashboard",
+              "title": "freelancer",
+              "favIconUrl": "https://www.freelancer.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "transform",
+          "description": "文件转换工具",
+          "color": "pink",
+          "tabs": [
+            {
+              "url": "https://word2md.com/",
+              "title": "Word to Markdown",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bookmarks",
+      "description": "",
+      "icon": "workspace",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "backend",
+          "tabs": [
+            {
+              "url": "https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs",
+              "title": "Node.js",
+              "favIconUrl": "https://nodejs.org/favicon.ico",
+              "description": "Introduction to Node.js",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.mongodb.com/try/download/shell",
+              "title": "MongoDB",
+              "favIconUrl": "https://www.mongodb.com/favicon.ico",
+              "description": "MongoDB",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://expressjs.com/en/guide/debugging.html",
+              "title": "Express",
+              "favIconUrl": "https://expressjs.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "design_patterns",
+          "tabs": [
+            {
+              "url": "https://github.com/AllThingsSmitty/basic-design-patterns",
+              "title": "github:basic-design-patterns",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "JavaScript 中基本设计模式示例的集合🧰",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://jsdev.space/creational-design-patterns/",
+              "title": "创建型设计模式",
+              "favIconUrl": "https://jsdev.space/favicon.ico",
+              "description": "掌握 JavaScript 中的创建型设计模式：专家指南",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://jsdev.space/solid-design-principles/",
+              "title": "SOLID 设计原则",
+              "favIconUrl": "https://jsdev.space/favicon.ico",
+              "description": "开发人员知道的 SOLID 设计原则",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "web",
+          "tabs": [
+            {
+              "url": "https://2ality.com/2025/08/learning-web-dev-toc.html",
+              "title": "学习 Web 开发",
+              "favIconUrl": "https://2ality.com/favicon.ico",
+              "description": "新的博客文章系列：学习 Web 开发",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "dataStructures_algorithms",
+          "tabs": [
+            {
+              "url": "https://www.hello-algo.com/chapter_array_and_linkedlist/list/",
+              "title": "Hello 算法",
+              "favIconUrl": "https://www.hello-algo.com/favicon.ico",
+              "description": "算法",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://visualgo.net/zh",
+              "title": "动画可视化数据结构和算法",
+              "favIconUrl": "https://visualgo.net/favicon.ico",
+              "description": "通过动画可视化数据结构和算法- VisuAlgo",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "typescript",
+          "tabs": [
+            {
+              "url": "https://www.geeksforgeeks.org/typescript/typescript-tutorial/",
+              "title": "TypeScript Tutorial",
+              "favIconUrl": "https://www.geeksforgeeks.org/favicon.ico",
+              "description": "TypeScript Tutorial - GeeksforGeeks",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://typehero.dev/challenge/hello-world",
+              "title": "Hello World | TypeHero",
+              "favIconUrl": "https://typehero.dev/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/type-challenges/type-challenges?tab=readme-ov-file#play-locally",
+              "title": "TypeScript type challenges",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "type-challenges/type-challenges: Collection of TypeScript type challenges with online judge",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "online",
+          "tabs": [
+            {
+              "url": "https://exercism.org/tracks",
+              "title": "exercism tracks",
+              "favIconUrl": "https://exercism.org/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://typehero.dev/challenge/default-generic-arguments",
+              "title": "typescript tracks",
+              "favIconUrl": "https://typehero.dev/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://leetcode.com/",
+              "title": "leetcode",
+              "favIconUrl": "https://leetcode.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.codewars.com/",
+              "title": "codewars tracks",
+              "favIconUrl": "https://www.codewars.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.hackerrank.com/dashboard",
+              "title": "hackerrank",
+              "favIconUrl": "https://www.hackerrank.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://notegpt.io/workspace/detail/Sl3XUmg4LBk",
+              "title": "notegpt 将视频转文字",
+              "favIconUrl": "https://notegpt.io/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://roadmap.sh/react",
+              "title": "Roadmap：路线图谱",
+              "favIconUrl": "https://roadmap.sh/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://sourcegraph.com/search",
+              "title": "Search Public Code(源代码阅读器)",
+              "favIconUrl": "https://sourcegraph.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://interview.html5.wiki/daily.html",
+              "title": "每日一题 | 前端百科",
+              "favIconUrl": "https://interview.html5.wiki/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "database",
+          "tabs": [
+            {
+              "url": "https://prisma.org.cn/docs/orm/prisma-client/queries/aggregation-grouping-summarizing",
+              "title": "prisma",
+              "favIconUrl": "https://prisma.org.cn/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "javascript",
+          "tabs": [
+            {
+              "url": "https://javascript.info/async",
+              "title": "javascript.info",
+              "favIconUrl": "https://javascript.info/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/getify/You-Dont-Know-JS",
+              "title": "You-Dont-Know-JS",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "description": "AI tools",
+      "icon": "study",
+      "color": "orange",
+      "groups": [
+        {
+          "name": "常用工具",
+          "color": "orange",
+          "tabs": [
+            {
+              "url": "https://chatgpt.com/zh-Hans-CN/translate/",
+              "title": "chatGPT 翻译",
+              "favIconUrl": "https://chatgpt.com/favicon.ico",
+              "description": "一个翻译工具",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "学习网站",
+          "description": "AI内容学习网站",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://learn.deeplearning.ai",
+              "title": "learn.deeplearning.ai",
+              "favIconUrl": "https://learn.deeplearning.ai/favicon.ico",
+              "description": "深度学习网站",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "icon": "news",
+      "color": "pink",
+      "groups": [
+        {
+          "name": "online-weekly",
+          "description": "每周资讯",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://tldr.tech/",
+              "title": "TLDR",
+              "favIconUrl": "https://tldr.tech/favicon.ico",
+              "description": "每周新闻简报",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CSS",
+      "icon": "study",
+      "color": "yellow",
+      "groups": [
+        {
+          "name": "online-study",
+          "description": "在线",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://flexboxle.com/?utm_source=tldrdesign",
+              "title": "CSS Flexbox 谜题",
+              "favIconUrl": "https://flexboxle.com/favicon.ico",
+              "description": "每日 CSS Flexbox 谜题",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activeSpaceId": "space_1768977642052_6yipdx5",
+  "version": 3,
+  "exportTime": "2026-02-24T10:26:06.881Z",
+  "exportedFrom": "Tab Manager"
+}

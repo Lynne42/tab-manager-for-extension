@@ -1,0 +1,309 @@
+{
+  "version": 2,
+  "spaces": [
+    {
+      "id": "aa64e8f2-d0d7-432c-94a4-c240cf0b53ab",
+      "name": "tools",
+      "description": "",
+      "groups": [
+        {
+          "id": "68503802-4185-47f8-9e8b-fbc3e0f5713c",
+          "name": "tools",
+          "tabs": [
+            {
+              "id": "c8a2e76d-db33-40ad-8d3f-ea3c58db5277",
+              "title": "ant-design.antgroup.com/components/dropdown-cn",
+              "description": "",
+              "url": "https://ant-design.antgroup.com/components/dropdown-cn",
+              "favIconUrl": ""
+            },
+            {
+              "id": "ed23bc31-2732-42f6-a5f3-f923f2fadeef",
+              "title": "Font Size - Tailwind CSS",
+              "description": "",
+              "url": "https://tailwindcss.com/docs/font-size",
+              "favIconUrl": ""
+            },
+            {
+              "id": "74ddbd0f-62b4-4827-9228-9d70e6541c03",
+              "title": "ChatGPT",
+              "description": "",
+              "url": "https://chatgpt.com/c/673d3d6c-3980-8008-b4e0-4a45c53996ea",
+              "favIconUrl": ""
+            },
+            {
+              "id": "be58bf22-d146-4bfc-83ed-5aae60affd5e",
+              "title": "date-fns - modern JavaScript date utility library",
+              "description": "",
+              "url": "https://date-fns.org/v4.1.0/docs/parse",
+              "favIconUrl": ""
+            },
+            {
+              "id": "5a8fc598-974f-4ffa-bb27-9e66934cc8e8",
+              "title": "Toby",
+              "description": "",
+              "url": "chrome://newtab/",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "c5f4439c-7bb7-42e8-b66d-641da876a9a1",
+          "name": "read",
+          "tabs": [
+            {
+              "id": "3be452e2-641b-4608-b948-0e75f0a8794e",
+              "title": "Josh个人网站-高质量的文章内容",
+              "description": "",
+              "url": "https://www.joshwcomeau.com/react/server-components/",
+              "favIconUrl": ""
+            },
+            {
+              "id": "9f79ccf3-b5b1-42b7-9f99-5588a3d2cf33",
+              "title": "Jan Hesters高质量博客",
+              "description": "",
+              "url": "https://janhesters.com/blog",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "b76cfe76-a12c-4e7e-8747-5e5278c855b8",
+          "name": "websit",
+          "tabs": [
+            {
+              "id": "f76e675a-324b-4b6e-b6ce-418674bf204c",
+              "title": "freelancer",
+              "description": "",
+              "url": "https://www.freelancer.com/dashboard",
+              "favIconUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0e0f1450-14b6-4902-bda6-55c8fd34b8c7",
+      "name": "Bookmarks",
+      "description": "",
+      "groups": [
+        {
+          "id": "f5657744-506c-4654-a822-7b0c80241af4",
+          "name": "backend",
+          "tabs": [
+            {
+              "id": "36383bed-860f-4f99-aea5-c002924b2f03",
+              "title": "Node.js — Introduction to Node.js",
+              "description": "",
+              "url": "https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs",
+              "favIconUrl": ""
+            },
+            {
+              "id": "23ca13cb-0bbb-4e16-9a8c-329585ff773d",
+              "title": "MongoDB Shell Download | MongoDB",
+              "description": "",
+              "url": "https://www.mongodb.com/try/download/shell",
+              "favIconUrl": ""
+            },
+            {
+              "id": "bd0730e6-9eab-4b67-bccc-00f2f3dbe23b",
+              "title": "Debugging Express",
+              "description": "",
+              "url": "https://expressjs.com/en/guide/debugging.html",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "24b30a51-0482-4499-9c60-6264fb372674",
+          "name": "design_patterns",
+          "tabs": [
+            {
+              "id": "14432726-8a82-45b6-ae0c-fe412566efb4",
+              "title": "AllThingsSmitty/basic-design-patterns：🔧 JavaScript 中基本设计模式示例的集合🧰",
+              "description": "",
+              "url": "https://github.com/AllThingsSmitty/basic-design-patterns",
+              "favIconUrl": ""
+            },
+            {
+              "id": "b87b9a40-7226-4420-a9ba-1c5790041aac",
+              "title": "掌握 JavaScript 中的创建型设计模式：专家指南",
+              "description": "",
+              "url": "https://jsdev.space/creational-design-patterns/",
+              "favIconUrl": ""
+            },
+            {
+              "id": "297650eb-3568-4b16-862e-b8ad2f5fd807",
+              "title": "每个 JavaScript 开发人员都应该知道的 SOLID 设计原则",
+              "description": "",
+              "url": "https://jsdev.space/solid-design-principles/",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "8ef1a627-4def-428d-9876-4e50e8ceb831",
+          "name": "web",
+          "tabs": [
+            {
+              "id": "fbabe3d7-c2ed-40c9-aa87-ecda506c6bc1",
+              "title": "新的博客文章系列：学习 Web 开发",
+              "description": "",
+              "url": "https://2ality.com/2025/08/learning-web-dev-toc.html",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "4b78ec3a-55df-494d-8aa2-e01e34014799",
+          "name": "dataStructures_algorithms",
+          "tabs": [
+            {
+              "id": "5c96d30b-c5f5-4da6-bb53-1fb9a4b53bc9",
+              "title": "4.3   列表 - Hello 算法",
+              "description": "",
+              "url": "https://www.hello-algo.com/chapter_array_and_linkedlist/list/",
+              "favIconUrl": ""
+            },
+            {
+              "id": "0fed94c0-b549-4b8c-bf25-d4f4f0ca7a01",
+              "title": "通过动画可视化数据结构和算法<br> - VisuAlgo",
+              "description": "",
+              "url": "https://visualgo.net/zh",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "501befb6-ac56-4cae-a34c-b1be85962344",
+          "name": "typescript",
+          "tabs": [
+            {
+              "id": "bf4c7f5f-7214-497f-aae8-f3ad1e559813",
+              "title": "TypeScript Tutorial - GeeksforGeeks",
+              "description": "",
+              "url": "https://www.geeksforgeeks.org/typescript/typescript-tutorial/",
+              "favIconUrl": ""
+            },
+            {
+              "id": "f2ad468a-c520-497f-9175-5a10c9e9dfc2",
+              "title": "Hello World | TypeHero",
+              "description": "",
+              "url": "https://typehero.dev/challenge/hello-world",
+              "favIconUrl": ""
+            },
+            {
+              "id": "723656bd-e108-452f-b3f7-77305e9aea6d",
+              "title": "type-challenges/type-challenges: Collection of TypeScript type challenges with online judge",
+              "description": "",
+              "url": "https://github.com/type-challenges/type-challenges?tab=readme-ov-file#play-locally",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "a540b20c-a6a7-4e7f-84e6-d90f234cc8e3",
+          "name": "online",
+          "tabs": [
+            {
+              "id": "d56d867c-675e-49d2-a66d-7649e0232ba8",
+              "title": "exercism tracks",
+              "description": "",
+              "url": "https://exercism.org/tracks",
+              "favIconUrl": ""
+            },
+            {
+              "id": "a013ccaa-e679-4826-a389-ee6f47b6e0f1",
+              "title": "typescript tracks",
+              "description": "",
+              "url": "https://typehero.dev/challenge/default-generic-arguments",
+              "favIconUrl": ""
+            },
+            {
+              "id": "3acbc5ff-c709-42c5-a68f-3be9af63d618",
+              "title": "leetcode",
+              "description": "",
+              "url": "https://leetcode.com/",
+              "favIconUrl": ""
+            },
+            {
+              "id": "2162253b-32f4-42d2-a57e-370f88a1be11",
+              "title": "codewars tracks",
+              "description": "",
+              "url": "https://www.codewars.com/",
+              "favIconUrl": ""
+            },
+            {
+              "id": "99fc8a22-1569-4ef4-b81c-b2a134fd4c49",
+              "title": "hackerrank",
+              "description": "",
+              "url": "https://www.hackerrank.com/dashboard",
+              "favIconUrl": ""
+            },
+            {
+              "id": "b52ec3b4-2777-452e-b25b-0813534c0aa9",
+              "title": "notegpt 将视频转文字",
+              "description": "",
+              "url": "https://notegpt.io/workspace/detail/Sl3XUmg4LBk",
+              "favIconUrl": ""
+            },
+            {
+              "id": "f8fdd679-e067-4cdf-b726-8161cdf52fee",
+              "title": "Roadmap：学习路线图谱",
+              "description": "",
+              "url": "https://roadmap.sh/react",
+              "favIconUrl": ""
+            },
+            {
+              "id": "b4d4c342-19c1-453d-82cc-9ea7eaa19cd1",
+              "title": "Search Public Code(源代码阅读器)",
+              "description": "",
+              "url": "https://sourcegraph.com/search",
+              "favIconUrl": ""
+            },
+            {
+              "id": "901e4f2c-b992-492c-af44-79d17528a683",
+              "title": "每日一题 | H5前端面试百科",
+              "description": "",
+              "url": "https://interview.html5.wiki/daily.html",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "a5365690-a128-472f-9dbd-f3e8fe88c1b5",
+          "name": "database",
+          "tabs": [
+            {
+              "id": "1f705d75-c12f-4b55-a8d2-4a2d43543259",
+              "title": "prisma ",
+              "description": "",
+              "url": "https://prisma.org.cn/docs/orm/prisma-client/queries/aggregation-grouping-summarizing",
+              "favIconUrl": ""
+            }
+          ]
+        },
+        {
+          "id": "0de169d4-687e-4cdc-bcca-5cbdbba1efc7",
+          "name": "javascript",
+          "tabs": [
+            {
+              "id": "27ef6848-620d-4cca-b5c6-ae485a553793",
+              "title": "javascript.info",
+              "description": "",
+              "url": "https://javascript.info/async",
+              "favIconUrl": ""
+            },
+            {
+              "id": "567e85e5-ee8f-40d8-8557-46e38b812b22",
+              "title": "You-Dont-Know-JS",
+              "description": "",
+              "url": "https://github.com/getify/You-Dont-Know-JS",
+              "favIconUrl": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
