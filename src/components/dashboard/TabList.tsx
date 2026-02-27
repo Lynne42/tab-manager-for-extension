@@ -6,6 +6,7 @@ interface Props {
     spaceId: string
     onOpenTab: (tab: any) => void
     onEditTab: (tab: any) => void
+    onMoveTab: (tab: any) => void
     onEditTabVisible: (spaceId: string, groupId: string, tabId: string) => void
     onDeleteTab: (spaceId: string, groupId: string, tabId: string) => void
     [x: string]: any
@@ -15,6 +16,7 @@ const TabList: React.FC<Props> = ({
     onDeleteTab,
     onOpenTab,
     onEditTab,
+    onMoveTab,
     spaceId,
 }) => {
 
@@ -29,6 +31,7 @@ const TabList: React.FC<Props> = ({
                     onClick={() => onOpenTab(tab)}
                     onDelete={() => onDeleteTab(spaceId, group.id, tab.id)}
                     onEditTab={() => onEditTab(tab)}
+                    onMove={() => onMoveTab(tab)}
                 />
             ))}
             

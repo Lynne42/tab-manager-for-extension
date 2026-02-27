@@ -15,6 +15,7 @@ interface GroupListProps {
   onDeleteGroup: (groupId: string) => void
   onCreateTab: (groupId: string) => void
   onEditTab: (tab: any) => void
+  onMoveTab: (tab: any) => void
   onEditTabVisible: (spaceId: string, groupId: string, tabId: string) => void
 }
 
@@ -28,6 +29,7 @@ export default function GroupList({
   onDeleteGroup,
   onCreateTab,
   onEditTab,
+  onMoveTab,
   onEditTabVisible,
 }: GroupListProps) {
   if (space.groups.length === 0) {
@@ -54,6 +56,7 @@ export default function GroupList({
           onDeleteGroup={onDeleteGroup}
           onCreateTab={onCreateTab}
           onEditTab={onEditTab}
+          onMoveTab={onMoveTab}
           onEditTabVisible={onEditTabVisible}
         />
       ))}

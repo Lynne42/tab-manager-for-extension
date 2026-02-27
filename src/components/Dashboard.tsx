@@ -169,6 +169,7 @@ export default function Dashboard() {
           {selectedSpace ? (
             <SpaceDetail
               space={selectedSpace}
+              spaces={spaces}
               isDemoSpace={isDemoSpace(selectedSpace)}
               onGroupToggle={handleGroupToggle}
               onDeleteTab={handleDeleteTab}

@@ -19,6 +19,7 @@ interface GroupItemProps {
     onDeleteGroup: (groupId: string) => void
     onCreateTab: (groupId: string) => void
     onEditTab: (tab: any) => void
+    onMoveTab: (tab: any) => void
     onEditTabVisible: (spaceId: string, groupId: string, tabId: string) => void
 }
 
@@ -32,6 +33,7 @@ export default function GroupItem({
     onDeleteGroup,
     onCreateTab,
     onEditTab,
+    onMoveTab,
     onEditTabVisible,
 }: GroupItemProps) {
     return (
@@ -80,7 +82,7 @@ export default function GroupItem({
                             icon={<AddIcon />}
                             onClick={() => onCreateTab(group.id)}
                             className='text-green-400 hover:text-green-400 transition-all bg-gray-700 hover:bg-gray-700  '
-                            title="Add tab to this group"
+                            title="添加标签"
                         />
 
                         {/* 编辑按钮 */}
@@ -88,7 +90,7 @@ export default function GroupItem({
                             icon={<EditIcon />}
                             onClick={() => onEditGroup(group)}
                             className='text-gray-400 hover:text-blue-400 hover:bg-gray-700'
-                            title="Edit group name"
+                            title="编辑分组"
                         />
 
                         {/* 删除按钮 */}
@@ -96,7 +98,7 @@ export default function GroupItem({
                             onClick={() => onDeleteGroup(group.id)}
                             icon={<DeleteIcon />}
                             className='text-gray-400 hover:text-red-400 hover:bg-gray-700 transition-all'
-                            title="Delete group"
+                            title="删除分组"
                         />
 
                     </div>
@@ -114,6 +116,7 @@ export default function GroupItem({
                             spaceId={spaceId}
                             onOpenTab={onOpenTab}
                             onEditTab={onEditTab}
+                            onMoveTab={onMoveTab}
                             onDeleteTab={onDeleteTab}
                             onEditTabVisible={onEditTabVisible}
                         />

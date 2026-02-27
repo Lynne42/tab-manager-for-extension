@@ -1,6 +1,61 @@
 {
   "spaces": [
     {
+      "name": "demo-workspace",
+      "description": "demo workspace",
+      "icon": "work",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "开发工具",
+          "color": "purple",
+          "tabs": [
+            {
+              "url": "https://github.com",
+              "title": "github",
+              "description": "Code collaboration platform for developers",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://stackoverflow.com",
+              "title": "stackoverflow",
+              "description": "Q&A site for programmers",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://vitejs.dev",
+              "title": "vite",
+              "description": "Fast and lightweight build tool for modern web projects",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "文档",
+          "color": "green",
+          "tabs": [
+            {
+              "url": "https://developer.mozilla.org",
+              "title": "developer",
+              "description": "Web development documentation and tutorials",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://react.dev",
+              "title": "react",
+              "description": "JavaScript library for building user interfaces",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "workspace",
       "description": "",
       "icon": "workspace",
@@ -318,61 +373,6 @@
       ]
     },
     {
-      "name": "demo-workspace",
-      "description": "demo workspace",
-      "icon": "work",
-      "color": "blue",
-      "groups": [
-        {
-          "name": "开发工具",
-          "color": "purple",
-          "tabs": [
-            {
-              "url": "https://github.com",
-              "title": "github",
-              "description": "Code collaboration platform for developers",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://stackoverflow.com",
-              "title": "stackoverflow",
-              "description": "Q&A site for programmers",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://vitejs.dev",
-              "title": "vite",
-              "description": "Fast and lightweight build tool for modern web projects",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "文档",
-          "color": "green",
-          "tabs": [
-            {
-              "url": "https://developer.mozilla.org",
-              "title": "developer",
-              "description": "Web development documentation and tutorials",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://react.dev",
-              "title": "react",
-              "description": "JavaScript library for building user interfaces",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "tools",
       "description": "",
       "icon": "workspace",
@@ -463,6 +463,7 @@
             {
               "url": "https://word2md.com/",
               "title": "Word to Markdown",
+              "favIconUrl": "https://word2md.com/favicon.ico",
               "status": "idle",
               "pinned": false
             }
@@ -708,8 +709,8 @@
     {
       "name": "AI",
       "description": "AI tools",
-      "icon": "study",
-      "color": "orange",
+      "icon": "workspace",
+      "color": "blue",
       "groups": [
         {
           "name": "常用工具",
@@ -739,13 +740,53 @@
               "pinned": false
             }
           ]
+        },
+        {
+          "name": "gemini",
+          "description": "gemini AI总览",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://gemini.google.com/",
+              "title": "gemini chat",
+              "favIconUrl": "https://gemini.google.com/favicon.ico",
+              "description": "gemini chat web site",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://geminicli.com/docs/cli/skills/",
+              "title": "gemini cli docs",
+              "favIconUrl": "https://geminicli.com/favicon.ico",
+              "description": "gemini cli docs site",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://antigravity.google/docs/get-started",
+              "title": "Antigravity docs",
+              "favIconUrl": "https://antigravity.google/favicon.ico",
+              "description": "Antigravity docs site",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/Lynne42/skills-template/tree/main/gemini",
+              "title": "personal gemini settings",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "personal gemini settings, skills, mcp, context",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
         }
       ]
     },
     {
       "name": "资讯",
-      "icon": "news",
-      "color": "pink",
+      "description": "",
+      "icon": "workspace",
+      "color": "blue",
       "groups": [
         {
           "name": "online-weekly",
@@ -766,8 +807,9 @@
     },
     {
       "name": "CSS",
-      "icon": "study",
-      "color": "yellow",
+      "description": "",
+      "icon": "workspace",
+      "color": "blue",
       "groups": [
         {
           "name": "online-study",
@@ -787,8 +829,8 @@
       ]
     }
   ],
-  "activeSpaceId": "space_1768977642052_6yipdx5",
-  "version": 3,
-  "exportTime": "2026-02-24T10:26:06.881Z",
+  "activeSpaceId": "94958200-6933-4c1b-88c9-da34f8a33b0f",
+  "version": 2,
+  "exportTime": "2026-02-27T10:03:14.311Z",
   "exportedFrom": "Tab Manager"
 }

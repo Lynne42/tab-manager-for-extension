@@ -175,21 +175,23 @@ export async function deleteTab(spaceId: string, groupId: string, tabId: string)
 }
 
 /**
- * 移动标签到另一个分组
+ * 移动标签到另一个分组 (支持跨 Space)
  */
 export async function moveTab(
-  spaceId: string,
+  fromSpaceId: string,
   fromGroupId: string,
+  toSpaceId: string,
   toGroupId: string,
   tabId: string
 ): Promise<Tab | null> {
   const storage = await getStorage()
-  const space = storage.spaces.find((s) => s.id === spaceId)
+  const fromSpace = storage.spaces.find((s) => s.id === fromSpaceId)
+  const toSpace = storage.spaces.find((s) => s.id === toSpaceId)
 
-  if (!space) return null
+  if (!fromSpace || !toSpace) return null
 
-  const fromGroup = space.groups.find((g) => g.id === fromGroupId)
-  const toGroup = space.groups.find((g) => g.id === toGroupId)
+  const fromGroup = fromSpace.groups.find((g) => g.id === fromGroupId)
+  const toGroup = toSpace.groups.find((g) => g.id === toGroupId)
 
   if (!fromGroup || !toGroup) return null
 
@@ -204,7 +206,8 @@ export async function moveTab(
 
   fromGroup.updatedAt = Date.now()
   toGroup.updatedAt = Date.now()
-  space.updatedAt = Date.now()
+  fromSpace.updatedAt = Date.now()
+  toSpace.updatedAt = Date.now()
 
   await setStorage(storage)
   return tab

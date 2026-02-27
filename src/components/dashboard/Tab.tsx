@@ -1,6 +1,7 @@
 import Button from '@/atoms/Button';
 import DeleteIcon from '@/assets/delete.svg?react';
 import EditIcon from '@/assets/edit.svg?react';
+import MoveIcon from '@/assets/move.svg?react';
 
 interface TabCardProps {
     tab: any
@@ -9,6 +10,7 @@ interface TabCardProps {
     onClick: () => void
     onDelete: () => void
     onEditTab: () => void
+    onMove: () => void
 }
 
 /**
@@ -16,7 +18,7 @@ interface TabCardProps {
  * @param {TabCardProps} props - 组件属性
  * @returns {JSX.Element} Tab 卡片的 React 元素
  */
-function Tab({ tab, onClick, onDelete, onEditTab }: TabCardProps) {
+function Tab({ tab, onClick, onDelete, onEditTab, onMove }: TabCardProps) {
     return (
         <div className="w-56 flex flex-col justify-between bg-gray-700 rounded-lg overflow-hidden group/tab hover:bg-gray-650 transition-colors">
             {/* Tab 卡片 */}
@@ -50,18 +52,24 @@ function Tab({ tab, onClick, onDelete, onEditTab }: TabCardProps) {
             </div>
 
             {/* 操作栏 */}
-            <div className="px-4 pb-3 flex justify-end">
+            <div className="px-4 pb-3 flex justify-end gap-1 opacity-0 group-hover/tab:opacity-100 transition-opacity">
+                <Button
+                    icon={<MoveIcon />}
+                    onClick={onMove}
+                    className='text-gray-400 hover:text-green-400 hover:bg-gray-700 transition-all'
+                    title="移动标签"
+                />
                 <Button
                     icon={<EditIcon />}
                     onClick={onEditTab}
                     className='text-gray-400 hover:text-blue-400 hover:bg-gray-700 transition-all'
-                    title="Edit tab"
+                    title="编辑标签"
                 />
                 <Button 
                     icon={<DeleteIcon />} 
                     onClick={onDelete}
                     className='text-gray-400 hover:text-red-400 hover:bg-gray-700 transition-all'
-                    title="Delete tab"
+                    title="删除标签"
                 />
             </div>
         </div>

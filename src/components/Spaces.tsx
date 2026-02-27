@@ -122,7 +122,7 @@ export default function Spaces() {
           <button
             onClick={handleOpenDashboard}
             className="p-2 hover:bg-gray-700 rounded-lg transition-colors"
-            title="Open full dashboard"
+            title="打开管理页面"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m0 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
@@ -235,7 +235,7 @@ export default function Spaces() {
                       }}
                       disabled={addingGroupId === group.id}
                       className="shrink-0 cursor-pointer p-1.5 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-md transition-colors"
-                      title="Add current tab"
+                      title="添加当前标签"
                     >
                       {addingGroupId === group.id ? (
                         <svg className="w-4 h-4 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -6,17 +6,19 @@ import { useState, useEffect } from 'react'
 import type { Space } from '../../types'
 import { getSpaceIcon, getBgColorClass } from '../../config/constants'
 import { createGroup, updateGroup } from '../../services'
-import { createTab, updateTab } from '../../services/tabService'
+import { createTab, updateTab, moveTab } from '../../services/tabService'
 import { getFaviconUrl, getTitleFromUrl } from '../../utils/url'
 import GroupList from './GroupList'
 import CreateGroupModal from './CreateGroupModal'
 import EditGroupModal from './EditGroupModal'
 import CreateTabModal from './CreateTabModal'
+import MoveTabModal from './MoveTabModal'
 import Button from '@/atoms/Button'
 import AddIcon from '@/assets/add.svg?react'
 
 interface SpaceDetailProps {
   space: Space
+  spaces: Space[]
   isDemoSpace: boolean
   onGroupToggle: (spaceId: string, groupId: string) => void
   onDeleteTab: (spaceId: string, groupId: string, tabId: string) => void
@@ -27,6 +29,7 @@ interface SpaceDetailProps {
 
 export default function SpaceDetail({
   space,
+  spaces,
   isDemoSpace,
   onGroupToggle,
   onDeleteTab,
@@ -57,6 +60,11 @@ export default function SpaceDetail({
   const [newTabStatus, setNewTabStatus] = useState<'active' | 'loading' | 'idle' | 'pending'>('idle')
   const [editingTab, setEditingTab] = useState<any>(null)
   const [savingTab, setSavingTab] = useState(false)
+
+  // Tab 移动模态框
+  const [showMoveTabModal, setShowMoveTabModal] = useState(false)
+  const [movingTab, setMovingTab] = useState<any>(null)
+  const [isMoving, setIsMoving] = useState(false)
 
   // 当 URL 变化时自动生成标题（仅在编辑模式下）
   useEffect(() => {
@@ -204,6 +212,30 @@ export default function SpaceDetail({
     }
   }
 
+  // 处理开始移动 Tab
+  const handleStartMoveTab = (tab: any) => {
+    setMovingTab(tab)
+    setShowMoveTabModal(true)
+  }
+
+  // 处理执行移动 Tab
+  const handleMoveTab = async (toSpaceId: string, toGroupId: string) => {
+    if (!movingTab) return
+    
+    setIsMoving(true)
+    try {
+      await moveTab(space.id, movingTab.groupId, toSpaceId, toGroupId, movingTab.id)
+      await onRefresh()
+      setShowMoveTabModal(false)
+      setMovingTab(null)
+    } catch (error) {
+      console.error('Failed to move tab:', error)
+      alert('Failed to move tab')
+    } finally {
+      setIsMoving(false)
+    }
+  }
+
   return (
     <>
       <div className="p-6">
@@ -254,6 +286,7 @@ export default function SpaceDetail({
           onDeleteGroup={onDeleteGroup}
           onCreateTab={handleStartCreateTab}
           onEditTab={handleStartEditTab}
+          onMoveTab={handleStartMoveTab}
           onEditTabVisible={() => {}}
         />
       </div>
@@ -305,6 +338,21 @@ export default function SpaceDetail({
         onChangePinned={setNewTabPinned}
         onChangeStatus={setNewTabStatus}
         onSave={handleSaveTab}
+      />
+
+      {/* 移动 Tab 模态框 */}
+      <MoveTabModal
+        isOpen={showMoveTabModal}
+        tab={movingTab}
+        spaces={spaces}
+        currentSpaceId={space.id}
+        currentGroupId={movingTab?.groupId || ''}
+        moving={isMoving}
+        onClose={() => {
+          setShowMoveTabModal(false)
+          setMovingTab(null)
+        }}
+        onMove={handleMoveTab}
       />
     </>
   )
