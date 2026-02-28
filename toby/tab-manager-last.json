@@ -593,81 +593,6 @@
           ]
         },
         {
-          "name": "online",
-          "tabs": [
-            {
-              "url": "https://exercism.org/tracks",
-              "title": "exercism tracks",
-              "favIconUrl": "https://exercism.org/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://typehero.dev/challenge/default-generic-arguments",
-              "title": "typescript tracks",
-              "favIconUrl": "https://typehero.dev/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://leetcode.com/",
-              "title": "leetcode",
-              "favIconUrl": "https://leetcode.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://www.codewars.com/",
-              "title": "codewars tracks",
-              "favIconUrl": "https://www.codewars.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://www.hackerrank.com/dashboard",
-              "title": "hackerrank",
-              "favIconUrl": "https://www.hackerrank.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://notegpt.io/workspace/detail/Sl3XUmg4LBk",
-              "title": "notegpt 将视频转文字",
-              "favIconUrl": "https://notegpt.io/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://roadmap.sh/react",
-              "title": "Roadmap：路线图谱",
-              "favIconUrl": "https://roadmap.sh/favicon.ico",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://sourcegraph.com/search",
-              "title": "Search Public Code(源代码阅读器)",
-              "favIconUrl": "https://sourcegraph.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://interview.html5.wiki/daily.html",
-              "title": "每日一题 | 前端百科",
-              "favIconUrl": "https://interview.html5.wiki/favicon.ico",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
           "name": "web",
           "tabs": [
             {
@@ -804,6 +729,81 @@
               "pinned": false
             }
           ]
+        },
+        {
+          "name": "online tools",
+          "tabs": [
+            {
+              "url": "https://exercism.org/tracks",
+              "title": "exercism tracks",
+              "favIconUrl": "https://exercism.org/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://typehero.dev/challenge/default-generic-arguments",
+              "title": "typescript tracks",
+              "favIconUrl": "https://typehero.dev/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://leetcode.com/",
+              "title": "leetcode",
+              "favIconUrl": "https://leetcode.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.codewars.com/",
+              "title": "codewars tracks",
+              "favIconUrl": "https://www.codewars.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.hackerrank.com/dashboard",
+              "title": "hackerrank",
+              "favIconUrl": "https://www.hackerrank.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://notegpt.io/workspace/detail/Sl3XUmg4LBk",
+              "title": "notegpt 将视频转文字",
+              "favIconUrl": "https://notegpt.io/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://roadmap.sh/react",
+              "title": "Roadmap：路线图谱",
+              "favIconUrl": "https://roadmap.sh/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://sourcegraph.com/search",
+              "title": "Search Public Code(源代码阅读器)",
+              "favIconUrl": "https://sourcegraph.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://interview.html5.wiki/daily.html",
+              "title": "每日一题 | 前端百科",
+              "favIconUrl": "https://interview.html5.wiki/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
         }
       ]
     },
@@ -831,8 +831,8 @@
       ]
     }
   ],
-  "activeSpaceId": "79aab0f8-3892-4f77-ac05-ace11c34a191",
+  "activeSpaceId": "236fbfaf-8afe-4fb6-a98f-a0e8e64e0df2",
   "version": 2,
-  "exportTime": "2026-02-28T02:31:11.111Z",
+  "exportTime": "2026-02-28T09:11:29.571Z",
   "exportedFrom": "Tab Manager"
 }

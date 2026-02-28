@@ -6,6 +6,7 @@ import TabList from './TabList'
 import DeleteIcon from '@/assets/delete.svg?react';
 import EditIcon from '@/assets/edit.svg?react';
 import AddIcon from '@/assets/add.svg?react';
+import MoveIcon from '@/assets/move.svg?react';
 import Button from '@/atoms/Button';
 
 interface GroupItemProps {
@@ -20,6 +21,8 @@ interface GroupItemProps {
     onCreateTab: (groupId: string) => void
     onEditTab: (tab: any) => void
     onMoveTab: (tab: any) => void
+    onMoveGroup: (group: any) => void
+    onReorderTabs: (groupId: string, tabIds: string[]) => void
     onEditTabVisible: (spaceId: string, groupId: string, tabId: string) => void
 }
 
@@ -34,10 +37,12 @@ export default function GroupItem({
     onCreateTab,
     onEditTab,
     onMoveTab,
+    onMoveGroup,
+    onReorderTabs,
     onEditTabVisible,
 }: GroupItemProps) {
     return (
-        <div className="bg-gray-800 rounded-lg overflow-hidden">
+        <div className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-gray-600 transition-colors">
             {/* Group 头部 */}
             <div className="p-4">
                 <div className="flex items-center gap-3">
@@ -63,7 +68,7 @@ export default function GroupItem({
 
                     {/* 名称 - 可编辑 */}
                     <div className="flex-1 min-w-0">
-                        <div className="font-bold truncate cursor-pointer hover:text-blue-400" 
+                        <div className="font-bold truncate cursor-pointer hover:text-blue-400"
                             onClick={() => onGroupToggle(spaceId, group.id)}>
                             {group.name}
                         </div>
@@ -76,20 +81,28 @@ export default function GroupItem({
                     <span className="text-sm text-gray-500 flex-shrink-0">{group.tabs.length} tabs</span>
 
                     {/* 操作按钮 */}
-                    <div className="flex items-center gap-1 flex-shrink-0">
+                    <div className="flex items-center gap-1 flex-shrink-0 ml-4">
                         {/* 添加 Tab 按钮 */}
                         <Button
                             icon={<AddIcon />}
                             onClick={() => onCreateTab(group.id)}
-                            className='text-green-400 hover:text-green-400 transition-all bg-gray-700 hover:bg-gray-700  '
+                            className='text-green-400 hover:text-green-400 transition-all bg-gray-700/50 hover:bg-gray-700'
                             title="添加标签"
+                        />
+
+                        {/* 移动分组按钮 */}
+                        <Button
+                            icon={<MoveIcon />}
+                            onClick={() => onMoveGroup(group)}
+                            className='text-gray-400 hover:text-green-400 hover:bg-gray-700 transition-all'
+                            title="移动分组到其它空间"
                         />
 
                         {/* 编辑按钮 */}
                         <Button
                             icon={<EditIcon />}
                             onClick={() => onEditGroup(group)}
-                            className='text-gray-400 hover:text-blue-400 hover:bg-gray-700'
+                            className='text-gray-400 hover:text-blue-400 hover:bg-gray-700 transition-all'
                             title="编辑分组"
                         />
 
@@ -117,6 +130,7 @@ export default function GroupItem({
                             onOpenTab={onOpenTab}
                             onEditTab={onEditTab}
                             onMoveTab={onMoveTab}
+                            onReorderTabs={onReorderTabs}
                             onDeleteTab={onDeleteTab}
                             onEditTabVisible={onEditTabVisible}
                         />

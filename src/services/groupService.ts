@@ -147,6 +147,54 @@ export async function reorderGroups(spaceId: string, groupIds: string[]): Promis
   await setStorage(storage)
 }
 
+/**
+ * 移动分组到另一个工作空间
+ * @param {string} fromSpaceId - 源工作空间 ID
+ * @param {string} toSpaceId - 目标工作空间 ID
+ * @param {string} groupId - 分组 ID
+ * @returns {Promise<boolean>} 是否移动成功
+ */
+export async function moveGroup(
+  fromSpaceId: string,
+  toSpaceId: string,
+  groupId: string
+): Promise<boolean> {
+  const storage = await getStorage()
+  
+  // 1. 查找源空间和分组
+  const fromSpace = storage.spaces.find((s) => s.id === fromSpaceId)
+  if (!fromSpace) return false
+
+  const groupIndex = fromSpace.groups.findIndex((g) => g.id === groupId)
+  if (groupIndex === -1) return false
+
+  // 2. 查找目标空间
+  const toSpace = storage.spaces.find((s) => s.id === toSpaceId)
+  if (!toSpace) return false
+
+  // 3. 执行移动操作
+  const [movingGroup] = fromSpace.groups.splice(groupIndex, 1)
+  
+  // 更新分组所属空间 ID
+  movingGroup.spaceId = toSpaceId
+  movingGroup.updatedAt = Date.now()
+  
+  // 确定目标空间中分组的新 order
+  const maxOrder = toSpace.groups.reduce((max, group) => Math.max(max, group.order), -1)
+  movingGroup.order = maxOrder + 1
+  
+  // 添加到目标空间
+  toSpace.groups.push(movingGroup)
+  
+  // 更新空间更新时间
+  fromSpace.updatedAt = Date.now()
+  toSpace.updatedAt = Date.now()
+
+  // 4. 保存到存储
+  await setStorage(storage)
+  return true
+}
+
 // ==================== 辅助函数 ====================
 
 /**

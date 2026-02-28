@@ -51,12 +51,12 @@ export default function CreateTabModal({
         <div className="space-y-4">
           {/* 标题 */}
           <div>
-            <label className="block text-sm font-medium mb-1">Title *</label>
+            <label className="block text-sm font-medium mb-1">Title</label>
             <input
               type="text"
               value={title}
               onChange={(e) => onChangeTitle(e.target.value)}
-              placeholder="Tab title"
+              placeholder="Tab title (optional, will use URL if empty)"
               className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               autoFocus
             />
@@ -135,7 +135,7 @@ export default function CreateTabModal({
           </button>
           <button
             onClick={onSave}
-            disabled={saving || !title.trim() || !url.trim()}
+            disabled={saving || !url.trim()}
             className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-lg transition-colors"
           >
             {saving ? 'Saving...' : (editingTabId ? 'Update' : 'Create')}

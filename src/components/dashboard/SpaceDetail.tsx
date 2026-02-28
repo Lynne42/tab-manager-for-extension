@@ -6,14 +6,15 @@ import { useState, useEffect } from 'react'
 import type { Space } from '../../types'
 import { getSpaceIcon, getBgColorClass } from '../../config/constants'
 import { createGroup, updateGroup } from '../../services'
-import { reorderGroups } from '../../services/groupService'
-import { createTab, updateTab, moveTab } from '../../services/tabService'
+import { reorderGroups, moveGroup } from '../../services/groupService'
+import { createTab, updateTab, moveTab, reorderTabs } from '../../services/tabService'
 import { getFaviconUrl, getTitleFromUrl } from '../../utils/url'
 import GroupList from './GroupList'
 import CreateGroupModal from './CreateGroupModal'
 import EditGroupModal from './EditGroupModal'
 import CreateTabModal from './CreateTabModal'
 import MoveTabModal from './MoveTabModal'
+import MoveGroupModal from './MoveGroupModal'
 import ReorderGroupsModal from './ReorderGroupsModal'
 import Button from '@/atoms/Button'
 import AddIcon from '@/assets/add.svg?react'
@@ -72,12 +73,10 @@ export default function SpaceDetail({
   const [movingTab, setMovingTab] = useState<any>(null)
   const [isMoving, setIsMoving] = useState(false)
 
-  // 当 URL 变化时自动生成标题（仅在编辑模式下）
-  useEffect(() => {
-    if (editingTab && newTabUrl && !newTabTitle) {
-      setNewTabTitle(getTitleFromUrl(newTabUrl))
-    }
-  }, [newTabUrl, editingTab, newTabTitle, getTitleFromUrl])
+  // Group 移动模态框
+  const [showMoveGroupModal, setShowMoveGroupModal] = useState(false)
+  const [movingGroup, setMovingGroup] = useState<any>(null)
+  const [isMovingGroup, setIsMovingGroup] = useState(false)
 
   // 处理创建 Group
   const handleCreateGroup = async () => {
@@ -121,6 +120,17 @@ export default function SpaceDetail({
     } catch (error) {
       console.error('Failed to reorder groups:', error)
       throw error
+    }
+  }
+
+  // 处理保存 Tab 排序
+  const handleReorderTabs = async (groupId: string, tabIds: string[]) => {
+    try {
+      await reorderTabs(space.id, groupId, tabIds)
+      await onRefresh()
+    } catch (error) {
+      console.error('Failed to reorder tabs:', error)
+      // 可在此处加入错误提示，由于重排序多为交互拖拽因此也可保持安静失败
     }
   }
 
@@ -253,6 +263,30 @@ export default function SpaceDetail({
     }
   }
 
+  // 处理开始移动 Group
+  const handleStartMoveGroup = (group: any) => {
+    setMovingGroup(group)
+    setShowMoveGroupModal(true)
+  }
+
+  // 处理执行移动 Group
+  const handleMoveGroup = async (toSpaceId: string) => {
+    if (!movingGroup) return
+
+    setIsMovingGroup(true)
+    try {
+      await moveGroup(space.id, toSpaceId, movingGroup.id)
+      await onRefresh()
+      setShowMoveGroupModal(false)
+      setMovingGroup(null)
+    } catch (error) {
+      console.error('Failed to move group:', error)
+      alert('Failed to move group')
+    } finally {
+      setIsMovingGroup(false)
+    }
+  }
+
   return (
     <>
       <div className="p-6">
@@ -313,6 +347,8 @@ export default function SpaceDetail({
           onCreateTab={handleStartCreateTab}
           onEditTab={handleStartEditTab}
           onMoveTab={handleStartMoveTab}
+          onMoveGroup={handleStartMoveGroup}
+          onReorderTabs={handleReorderTabs}
           onEditTabVisible={() => {}}
         />
       </div>
@@ -387,6 +423,20 @@ export default function SpaceDetail({
           setMovingTab(null)
         }}
         onMove={handleMoveTab}
+      />
+
+      {/* 移动 Group 模态框 */}
+      <MoveGroupModal
+        isOpen={showMoveGroupModal}
+        group={movingGroup}
+        spaces={spaces}
+        currentSpaceId={space.id}
+        moving={isMovingGroup}
+        onClose={() => {
+          setShowMoveGroupModal(false)
+          setMovingGroup(null)
+        }}
+        onMove={handleMoveGroup}
       />
     </>
   )
