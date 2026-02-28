@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 import type { Space } from '../../types'
 import { getSpaceIcon, getBgColorClass } from '../../config/constants'
 import { createGroup, updateGroup } from '../../services'
+import { reorderGroups } from '../../services/groupService'
 import { createTab, updateTab, moveTab } from '../../services/tabService'
 import { getFaviconUrl, getTitleFromUrl } from '../../utils/url'
 import GroupList from './GroupList'
@@ -13,8 +14,10 @@ import CreateGroupModal from './CreateGroupModal'
 import EditGroupModal from './EditGroupModal'
 import CreateTabModal from './CreateTabModal'
 import MoveTabModal from './MoveTabModal'
+import ReorderGroupsModal from './ReorderGroupsModal'
 import Button from '@/atoms/Button'
 import AddIcon from '@/assets/add.svg?react'
+import MoveIcon from '@/assets/move.svg?react'
 
 interface SpaceDetailProps {
   space: Space
@@ -49,6 +52,9 @@ export default function SpaceDetail({
   const [showEditGroupModal, setShowEditGroupModal] = useState(false)
   const [editingGroup, setEditingGroup] = useState<any>(null)
   const [editingGroupName, setEditingGroupName] = useState('')
+
+  // Group 排序模态框
+  const [showReorderModal, setShowReorderModal] = useState(false)
 
   // Tab 创建模态框
   const [showCreateTabModal, setShowCreateTabModal] = useState(false)
@@ -104,6 +110,17 @@ export default function SpaceDetail({
       alert('Failed to create group')
     } finally {
       setCreatingGroup(false)
+    }
+  }
+
+  // 处理保存 Group 排序
+  const handleSaveReorder = async (groupIds: string[]) => {
+    try {
+      await reorderGroups(space.id, groupIds)
+      await onRefresh()
+    } catch (error) {
+      console.error('Failed to reorder groups:', error)
+      throw error
     }
   }
 
@@ -265,7 +282,7 @@ export default function SpaceDetail({
         </div>
 
         {/* 添加 Group 按钮 */}
-        <div className="mb-4">
+        <div className="mb-4 flex gap-2">
           <Button
             icon={<AddIcon />}
             onClick={() => setShowCreateGroupModal(true)}
@@ -273,6 +290,15 @@ export default function SpaceDetail({
           >
             Add Group
           </Button>
+          {space.groups.length > 1 && (
+            <Button
+              icon={<MoveIcon />}
+              onClick={() => setShowReorderModal(true)}
+              className='px-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors border border-gray-600'
+            >
+              Reorder
+            </Button>
+          )}
         </div>
 
         {/* Groups 列表 */}
@@ -318,6 +344,14 @@ export default function SpaceDetail({
         }}
         onChangeName={setEditingGroupName}
         onSave={handleSaveGroupName}
+      />
+
+      {/* 排序 Group 模态框 */}
+      <ReorderGroupsModal
+        isOpen={showReorderModal}
+        space={space}
+        onClose={() => setShowReorderModal(false)}
+        onSave={handleSaveReorder}
       />
 
       {/* 创建/编辑 Tab 模态框 */}

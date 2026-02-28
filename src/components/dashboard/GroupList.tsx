@@ -43,23 +43,25 @@ export default function GroupList({
 
   return (
     <div className="space-y-4">
-      {space.groups.map((group) => (
-        <GroupItem
-          key={group.id}
-          spaceId={space.id}
-          group={group}
-          isDemoSpace={isDemoSpace}
-          onGroupToggle={onGroupToggle}
-          onDeleteTab={onDeleteTab}
-          onOpenTab={onOpenTab}
-          onEditGroup={onEditGroup}
-          onDeleteGroup={onDeleteGroup}
-          onCreateTab={onCreateTab}
-          onEditTab={onEditTab}
-          onMoveTab={onMoveTab}
-          onEditTabVisible={onEditTabVisible}
-        />
-      ))}
+      {[...space.groups]
+        .sort((a, b) => a.order - b.order)
+        .map((group) => (
+          <GroupItem
+            key={group.id}
+            spaceId={space.id}
+            group={group}
+            isDemoSpace={isDemoSpace}
+            onGroupToggle={onGroupToggle}
+            onDeleteTab={onDeleteTab}
+            onOpenTab={onOpenTab}
+            onEditGroup={onEditGroup}
+            onDeleteGroup={onDeleteGroup}
+            onCreateTab={onCreateTab}
+            onEditTab={onEditTab}
+            onMoveTab={onMoveTab}
+            onEditTabVisible={onEditTabVisible}
+          />
+        ))}
     </div>
   )
 }

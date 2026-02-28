@@ -200,6 +200,22 @@
               "description": "我的资产 - JumpServer 开源堡垒机",
               "status": "idle",
               "pinned": false
+            },
+            {
+              "url": "https://reg.real-ai.cn/harbor/projects",
+              "title": "harbor",
+              "favIconUrl": "https://reg.real-ai.cn/favicon.ico",
+              "description": "公司镜像仓库",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://git.real-ai.cn/dashboard/groups",
+              "title": "gitlab",
+              "favIconUrl": "https://git.real-ai.cn/favicon.ico",
+              "description": "公司代码仓库",
+              "status": "idle",
+              "pinned": false
             }
           ]
         },
@@ -478,28 +494,21 @@
       "color": "blue",
       "groups": [
         {
-          "name": "backend",
+          "name": "dataStructures_algorithms",
           "tabs": [
             {
-              "url": "https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs",
-              "title": "Node.js",
-              "favIconUrl": "https://nodejs.org/favicon.ico",
-              "description": "Introduction to Node.js",
+              "url": "https://www.hello-algo.com/chapter_array_and_linkedlist/list/",
+              "title": "Hello 算法",
+              "favIconUrl": "https://www.hello-algo.com/favicon.ico",
+              "description": "算法",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://www.mongodb.com/try/download/shell",
-              "title": "MongoDB",
-              "favIconUrl": "https://www.mongodb.com/favicon.ico",
-              "description": "MongoDB",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://expressjs.com/en/guide/debugging.html",
-              "title": "Express",
-              "favIconUrl": "https://expressjs.com/favicon.ico",
+              "url": "https://visualgo.net/zh",
+              "title": "动画可视化数据结构和算法",
+              "favIconUrl": "https://visualgo.net/favicon.ico",
+              "description": "通过动画可视化数据结构和算法- VisuAlgo",
               "status": "idle",
               "pinned": false
             }
@@ -535,40 +544,6 @@
           ]
         },
         {
-          "name": "web",
-          "tabs": [
-            {
-              "url": "https://2ality.com/2025/08/learning-web-dev-toc.html",
-              "title": "学习 Web 开发",
-              "favIconUrl": "https://2ality.com/favicon.ico",
-              "description": "新的博客文章系列：学习 Web 开发",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "dataStructures_algorithms",
-          "tabs": [
-            {
-              "url": "https://www.hello-algo.com/chapter_array_and_linkedlist/list/",
-              "title": "Hello 算法",
-              "favIconUrl": "https://www.hello-algo.com/favicon.ico",
-              "description": "算法",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://visualgo.net/zh",
-              "title": "动画可视化数据结构和算法",
-              "favIconUrl": "https://visualgo.net/favicon.ico",
-              "description": "通过动画可视化数据结构和算法- VisuAlgo",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
           "name": "typescript",
           "tabs": [
             {
@@ -591,6 +566,27 @@
               "title": "TypeScript type challenges",
               "favIconUrl": "https://github.com/favicon.ico",
               "description": "type-challenges/type-challenges: Collection of TypeScript type challenges with online judge",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "javascript",
+          "tabs": [
+            {
+              "url": "https://javascript.info/async",
+              "title": "javascript.info",
+              "favIconUrl": "https://javascript.info/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/getify/You-Dont-Know-JS",
+              "title": "You-Dont-Know-JS",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "",
               "status": "idle",
               "pinned": false
             }
@@ -672,33 +668,53 @@
           ]
         },
         {
-          "name": "database",
+          "name": "web",
           "tabs": [
             {
-              "url": "https://prisma.org.cn/docs/orm/prisma-client/queries/aggregation-grouping-summarizing",
-              "title": "prisma",
-              "favIconUrl": "https://prisma.org.cn/favicon.ico",
+              "url": "https://2ality.com/2025/08/learning-web-dev-toc.html",
+              "title": "学习 Web 开发",
+              "favIconUrl": "https://2ality.com/favicon.ico",
+              "description": "新的博客文章系列：学习 Web 开发",
               "status": "idle",
               "pinned": false
             }
           ]
         },
         {
-          "name": "javascript",
+          "name": "backend",
           "tabs": [
             {
-              "url": "https://javascript.info/async",
-              "title": "javascript.info",
-              "favIconUrl": "https://javascript.info/favicon.ico",
-              "description": "",
+              "url": "https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs",
+              "title": "Node.js",
+              "favIconUrl": "https://nodejs.org/favicon.ico",
+              "description": "Introduction to Node.js",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://github.com/getify/You-Dont-Know-JS",
-              "title": "You-Dont-Know-JS",
-              "favIconUrl": "https://github.com/favicon.ico",
-              "description": "",
+              "url": "https://www.mongodb.com/try/download/shell",
+              "title": "MongoDB",
+              "favIconUrl": "https://www.mongodb.com/favicon.ico",
+              "description": "MongoDB",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://expressjs.com/en/guide/debugging.html",
+              "title": "Express",
+              "favIconUrl": "https://expressjs.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "database",
+          "tabs": [
+            {
+              "url": "https://prisma.org.cn/docs/orm/prisma-client/queries/aggregation-grouping-summarizing",
+              "title": "prisma",
+              "favIconUrl": "https://prisma.org.cn/favicon.ico",
               "status": "idle",
               "pinned": false
             }
@@ -712,20 +728,6 @@
       "icon": "workspace",
       "color": "blue",
       "groups": [
-        {
-          "name": "常用工具",
-          "color": "orange",
-          "tabs": [
-            {
-              "url": "https://chatgpt.com/zh-Hans-CN/translate/",
-              "title": "chatGPT 翻译",
-              "favIconUrl": "https://chatgpt.com/favicon.ico",
-              "description": "一个翻译工具",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
         {
           "name": "学习网站",
           "description": "AI内容学习网站",
@@ -829,8 +831,8 @@
       ]
     }
   ],
-  "activeSpaceId": "94958200-6933-4c1b-88c9-da34f8a33b0f",
+  "activeSpaceId": "79aab0f8-3892-4f77-ac05-ace11c34a191",
   "version": 2,
-  "exportTime": "2026-02-27T10:03:14.311Z",
+  "exportTime": "2026-02-28T02:31:11.111Z",
   "exportedFrom": "Tab Manager"
 }
