@@ -56,16 +56,12 @@ export default function MoveTabModal({
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-gray-800 rounded-lg p-6 w-full max-w-md border border-gray-700 shadow-2xl">
-        <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-          Move Tab
-        </h3>
+        <h3 className="text-xl font-bold mb-4 flex items-center gap-2">Move Tab</h3>
 
         <div className="mb-6">
           <div className="text-sm text-gray-400 mb-1">Tab to move:</div>
           <div className="bg-gray-700 p-3 rounded-lg flex items-center gap-3">
-            {tab.favIconUrl && (
-              <img src={tab.favIconUrl} alt="" className="w-5 h-5" />
-            )}
+            {tab.favIconUrl && <img src={tab.favIconUrl} alt="" className="w-5 h-5" />}
             <div className="font-medium truncate">{tab.title}</div>
           </div>
         </div>
@@ -99,7 +95,10 @@ export default function MoveTabModal({
               {availableGroups.length > 0 ? (
                 availableGroups.map((g) => (
                   <option key={g.id} value={g.id}>
-                    {g.name} {g.id === currentGroupId && selectedSpaceId === currentSpaceId ? '(Current)' : ''}
+                    {g.name}{' '}
+                    {g.id === currentGroupId && selectedSpaceId === currentSpaceId
+                      ? '(Current)'
+                      : ''}
                   </option>
                 ))
               ) : (
@@ -119,7 +118,11 @@ export default function MoveTabModal({
           </button>
           <button
             onClick={() => onMove(selectedSpaceId, selectedGroupId)}
-            disabled={moving || !selectedGroupId || (selectedSpaceId === currentSpaceId && selectedGroupId === currentGroupId)}
+            disabled={
+              moving ||
+              !selectedGroupId ||
+              (selectedSpaceId === currentSpaceId && selectedGroupId === currentGroupId)
+            }
             className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-lg transition-colors text-sm font-medium"
           >
             {moving ? 'Moving...' : 'Confirm Move'}

@@ -6,15 +6,7 @@
 
 export type TabStatus = 'active' | 'loading' | 'idle' | 'pending'
 
-export type SpaceColor =
-  | 'blue'
-  | 'purple'
-  | 'green'
-  | 'yellow'
-  | 'red'
-  | 'orange'
-  | 'pink'
-  | 'gray'
+export type SpaceColor = 'blue' | 'purple' | 'green' | 'yellow' | 'red' | 'orange' | 'pink' | 'gray'
 
 export type SpaceIcon =
   | 'workspace'
@@ -219,7 +211,10 @@ export const DEFAULT_SPACE: Omit<Space, 'id' | 'name' | 'groups' | 'createdAt' |
   description: undefined,
 }
 
-export const DEFAULT_GROUP: Omit<Group, 'id' | 'spaceId' | 'name' | 'tabs' | 'createdAt' | 'updatedAt'> = {
+export const DEFAULT_GROUP: Omit<
+  Group,
+  'id' | 'spaceId' | 'name' | 'tabs' | 'createdAt' | 'updatedAt'
+> = {
   expanded: true,
   order: 0,
   description: undefined,
@@ -227,7 +222,10 @@ export const DEFAULT_GROUP: Omit<Group, 'id' | 'spaceId' | 'name' | 'tabs' | 'cr
   color: undefined,
 }
 
-export const DEFAULT_TAB: Omit<Tab, 'id' | 'groupId' | 'url' | 'title' | 'createdAt' | 'updatedAt'> = {
+export const DEFAULT_TAB: Omit<
+  Tab,
+  'id' | 'groupId' | 'url' | 'title' | 'createdAt' | 'updatedAt'
+> = {
   status: 'idle',
   pinned: false,
   favIconUrl: undefined,

@@ -3,11 +3,7 @@
   "name": "Tab Manager",
   "version": "1.0.0",
   "description": "Manage your browser tabs efficiently",
-  "permissions": [
-    "tabs",
-    "storage",
-    "activeTab"
-  ],
+  "permissions": ["tabs", "storage", "activeTab"],
   "action": {
     "default_popup": "src/popup.html",
     "default_title": "Tab Manager"

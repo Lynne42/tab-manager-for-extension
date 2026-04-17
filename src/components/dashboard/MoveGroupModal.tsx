@@ -38,16 +38,12 @@ export default function MoveGroupModal({
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-gray-800 rounded-lg p-6 w-full max-w-md border border-gray-700 shadow-2xl">
-        <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-          Move Group
-        </h3>
+        <h3 className="text-xl font-bold mb-4 flex items-center gap-2">Move Group</h3>
 
         <div className="mb-6">
           <div className="text-sm text-gray-400 mb-1">Group to move:</div>
           <div className="bg-gray-700 p-3 rounded-lg flex items-center gap-3 border border-gray-600">
-            {group.icon && (
-              <span className="text-xl">{group.icon}</span>
-            )}
+            {group.icon && <span className="text-xl">{group.icon}</span>}
             <div>
               <div className="font-medium truncate">{group.name}</div>
               <div className="text-xs text-gray-400">{group.tabs.length} tabs inside</div>

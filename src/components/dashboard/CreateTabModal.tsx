@@ -44,9 +44,7 @@ export default function CreateTabModal({
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-gray-800 rounded-lg p-6 w-full max-w-md">
-        <h3 className="text-xl font-bold mb-4">
-          {editingTabId ? 'Edit Tab' : 'Create New Tab'}
-        </h3>
+        <h3 className="text-xl font-bold mb-4">{editingTabId ? 'Edit Tab' : 'Create New Tab'}</h3>
 
         <div className="space-y-4">
           {/* 标题 */}
@@ -86,7 +84,6 @@ export default function CreateTabModal({
             />
           </div>
 
-          
           {/* 分组信息 */}
           <div className="bg-gray-700 rounded-lg p-3">
             <div className="text-sm text-gray-300">
@@ -138,7 +135,7 @@ export default function CreateTabModal({
             disabled={saving || !url.trim()}
             className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-lg transition-colors"
           >
-            {saving ? 'Saving...' : (editingTabId ? 'Update' : 'Create')}
+            {saving ? 'Saving...' : editingTabId ? 'Update' : 'Create'}
           </button>
         </div>
       </div>

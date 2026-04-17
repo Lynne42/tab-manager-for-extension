@@ -13,8 +13,8 @@ export default defineConfig({
       port: 5173,
     },
     cors: {
-      origin: "*",
-      methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      origin: '*',
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     },
   },
   resolve: {
@@ -22,11 +22,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  plugins: [
-    react(),
-    crx({ manifest: manifest as any }),
-    svgr(),
-  ],
+  plugins: [react(), crx({ manifest: manifest as any }), svgr()],
   build: {
     rollupOptions: {
       input: {

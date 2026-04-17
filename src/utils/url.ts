@@ -1,4 +1,3 @@
-
 /**
  * 从 URL 中提取域名
  * @param {string} url - 完整的 URL 字符串
@@ -35,7 +34,12 @@ export function getFaviconUrl(url: string): string {
     }
 
     // 如果已经有明确的 favicon URL，直接返回
-    if (domain.includes('favicon.ico') || domain.includes('.png') || domain.includes('.jpg') || domain.includes('.svg')) {
+    if (
+      domain.includes('favicon.ico') ||
+      domain.includes('.png') ||
+      domain.includes('.jpg') ||
+      domain.includes('.svg')
+    ) {
       return url.startsWith('http') ? url : `https://${domain}`
     }
 

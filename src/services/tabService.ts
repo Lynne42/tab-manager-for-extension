@@ -18,7 +18,11 @@ export async function getTabsByGroupId(spaceId: string, groupId: string): Promis
 /**
  * 根据 ID 获取标签
  */
-export async function getTabById(spaceId: string, groupId: string, tabId: string): Promise<Tab | null> {
+export async function getTabById(
+  spaceId: string,
+  groupId: string,
+  tabId: string,
+): Promise<Tab | null> {
   const tabs = await getTabsByGroupId(spaceId, groupId)
   return tabs.find((tab) => tab.id === tabId) || null
 }
@@ -44,7 +48,7 @@ export async function getTabByChromeTabId(chromeTabId: number): Promise<Tab | nu
 export async function createTab(
   spaceId: string,
   groupId: string,
-  params: CreateTabParams
+  params: CreateTabParams,
 ): Promise<Tab | null> {
   const storage = await getStorage()
   const space = storage.spaces.find((s) => s.id === spaceId)
@@ -83,7 +87,7 @@ export async function createTab(
 export async function createTabs(
   spaceId: string,
   groupId: string,
-  tabsParams: CreateTabParams[]
+  tabsParams: CreateTabParams[],
 ): Promise<Tab[]> {
   const storage = await getStorage()
   const space = storage.spaces.find((s) => s.id === spaceId)
@@ -123,7 +127,7 @@ export async function updateTab(
   spaceId: string,
   groupId: string,
   tabId: string,
-  params: UpdateTabParams
+  params: UpdateTabParams,
 ): Promise<Tab | null> {
   const storage = await getStorage()
   const space = storage.spaces.find((s) => s.id === spaceId)
@@ -182,7 +186,7 @@ export async function moveTab(
   fromGroupId: string,
   toSpaceId: string,
   toGroupId: string,
-  tabId: string
+  tabId: string,
 ): Promise<Tab | null> {
   const storage = await getStorage()
   const fromSpace = storage.spaces.find((s) => s.id === fromSpaceId)
@@ -216,7 +220,11 @@ export async function moveTab(
 /**
  * 更新标签排序
  */
-export async function reorderTabs(spaceId: string, groupId: string, tabIds: string[]): Promise<void> {
+export async function reorderTabs(
+  spaceId: string,
+  groupId: string,
+  tabIds: string[],
+): Promise<void> {
   const storage = await getStorage()
   const space = storage.spaces.find((s) => s.id === spaceId)
 
@@ -227,9 +235,7 @@ export async function reorderTabs(spaceId: string, groupId: string, tabIds: stri
 
   const tabMap = new Map(group.tabs.map((tab) => [tab.id, tab]))
 
-  group.tabs = tabIds
-    .map((id) => tabMap.get(id))
-    .filter((tab): tab is Tab => tab !== undefined)
+  group.tabs = tabIds.map((id) => tabMap.get(id)).filter((tab): tab is Tab => tab !== undefined)
 
   group.updatedAt = Date.now()
   space.updatedAt = Date.now()

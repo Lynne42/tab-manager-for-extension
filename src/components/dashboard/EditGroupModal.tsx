@@ -10,7 +10,13 @@ interface EditGroupModalProps {
   onSave: () => void
 }
 
-export default function EditGroupModal({ isOpen, name, onClose, onChangeName, onSave }: EditGroupModalProps) {
+export default function EditGroupModal({
+  isOpen,
+  name,
+  onClose,
+  onChangeName,
+  onSave,
+}: EditGroupModalProps) {
   if (!isOpen) return null
 
   return (

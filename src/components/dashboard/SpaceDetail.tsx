@@ -64,7 +64,9 @@ export default function SpaceDetail({
   const [newTabUrl, setNewTabUrl] = useState('')
   const [newTabDescription, setNewTabDescription] = useState('')
   const [newTabPinned, setNewTabPinned] = useState(false)
-  const [newTabStatus, setNewTabStatus] = useState<'active' | 'loading' | 'idle' | 'pending'>('idle')
+  const [newTabStatus, setNewTabStatus] = useState<'active' | 'loading' | 'idle' | 'pending'>(
+    'idle',
+  )
   const [editingTab, setEditingTab] = useState<any>(null)
   const [savingTab, setSavingTab] = useState(false)
 
@@ -248,7 +250,7 @@ export default function SpaceDetail({
   // 处理执行移动 Tab
   const handleMoveTab = async (toSpaceId: string, toGroupId: string) => {
     if (!movingTab) return
-    
+
     setIsMoving(true)
     try {
       await moveTab(space.id, movingTab.groupId, toSpaceId, toGroupId, movingTab.id)
@@ -302,16 +304,17 @@ export default function SpaceDetail({
               <div className="flex items-center gap-2">
                 <h2 className="text-2xl font-bold">{space.name}</h2>
                 {isDemoSpace && (
-                  <span className="px-2 py-0.5 text-xs bg-gray-700 text-gray-400 rounded">Demo</span>
+                  <span className="px-2 py-0.5 text-xs bg-gray-700 text-gray-400 rounded">
+                    Demo
+                  </span>
                 )}
               </div>
-              {space.description && (
-                <p className="text-gray-400 text-sm">{space.description}</p>
-              )}
+              {space.description && <p className="text-gray-400 text-sm">{space.description}</p>}
             </div>
           </div>
           <div className="text-sm text-gray-500 mt-2">
-            {space.groups.length} groups · {space.groups.reduce((sum, g) => sum + g.tabs.length, 0)} tabs
+            {space.groups.length} groups · {space.groups.reduce((sum, g) => sum + g.tabs.length, 0)}{' '}
+            tabs
           </div>
         </div>
 
@@ -320,7 +323,7 @@ export default function SpaceDetail({
           <Button
             icon={<AddIcon />}
             onClick={() => setShowCreateGroupModal(true)}
-            className='px-4 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors'
+            className="px-4 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
           >
             Add Group
           </Button>
@@ -328,7 +331,7 @@ export default function SpaceDetail({
             <Button
               icon={<MoveIcon />}
               onClick={() => setShowReorderModal(true)}
-              className='px-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors border border-gray-600'
+              className="px-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors border border-gray-600"
             >
               Reorder
             </Button>

@@ -10,27 +10,27 @@ import type { TabManagerStorage, Space, Group, Tab } from '../types'
  * @returns {any} 过滤后的导出数据结构
  */
 function createExportData(data: TabManagerStorage): any {
-  const filteredSpaces = data.spaces.map(space => ({
+  const filteredSpaces = data.spaces.map((space) => ({
     name: space.name,
     description: space.description,
     icon: space.icon,
     color: space.color,
     groups: space.groups
-      .filter(group => group.tabs.length > 0) // 只包含有标签的分组
-      .map(group => ({
+      .filter((group) => group.tabs.length > 0) // 只包含有标签的分组
+      .map((group) => ({
         name: group.name,
         description: group.description,
         icon: group.icon,
         color: group.color,
-        tabs: group.tabs.map(tab => ({
+        tabs: group.tabs.map((tab) => ({
           url: tab.url,
           title: tab.title,
           favIconUrl: tab.favIconUrl,
           description: tab.description,
           status: tab.status,
           pinned: tab.pinned,
-        }))
-      }))
+        })),
+      })),
   }))
 
   return {
@@ -82,9 +82,9 @@ export function exportData(data: TabManagerStorage, filename: string = 'tab-mana
  * @returns {string} 随机生成的 UUID 字符串
  */
 function generateUUID(): string {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-    const r = Math.random() * 16 | 0
-    const v = c === 'x' ? r : (r & 0x3 | 0x8)
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    const r = (Math.random() * 16) | 0
+    const v = c === 'x' ? r : (r & 0x3) | 0x8
     return v.toString(16)
   })
 }
@@ -100,7 +100,10 @@ function generateTimestamp(): number {
 /**
  * 将嵌套的导入格式转换为 TabManagerStorage 格式（生成新ID）
  */
-export function convertImportFormatToStorage(importData: any): { spaces: Space[], maxOrder: number } {
+export function convertImportFormatToStorage(importData: any): {
+  spaces: Space[]
+  maxOrder: number
+} {
   const spaces: Space[] = []
   let maxOrder = 0
 
@@ -244,37 +247,40 @@ export function calculateImportStats(importData: any): {
     totalGroups,
     totalTabs,
     skippedGroups,
-    skippedSpaces
+    skippedSpaces,
   }
 }
 
 /**
  * 将导入的数据合并到现有存储中
  */
-export function mergeImportedData(existingData: TabManagerStorage, importedSpaces: Space[]): TabManagerStorage {
+export function mergeImportedData(
+  existingData: TabManagerStorage,
+  importedSpaces: Space[],
+): TabManagerStorage {
   const mergedSpaces = [...existingData.spaces]
 
   // 添加导入的空间
-  importedSpaces.forEach(importedSpace => {
+  importedSpaces.forEach((importedSpace) => {
     // 检查是否已存在同名空间
-    const existingSpace = mergedSpaces.find(s => s.name === importedSpace.name)
+    const existingSpace = mergedSpaces.find((s) => s.name === importedSpace.name)
 
     if (existingSpace) {
       // 如果存在同名空间，合并其分组
-      importedSpace.groups.forEach(importedGroup => {
+      importedSpace.groups.forEach((importedGroup) => {
         // 跳过没有 tabs 的分组
         if (importedGroup.tabs.length === 0) {
           console.log(`Skipping merged group "${importedGroup.name}" because it has no tabs`)
           return
         }
         // 检查是否已存在同名分组
-        const existingGroup = existingSpace.groups.find(g => g.name === importedGroup.name)
+        const existingGroup = existingSpace.groups.find((g) => g.name === importedGroup.name)
 
         if (existingGroup) {
           // 合并标签
-          importedGroup.tabs.forEach(importedTab => {
+          importedGroup.tabs.forEach((importedTab) => {
             // 检查是否已存在相同URL的标签
-            const existingTab = existingGroup.tabs.find(t => t.url === importedTab.url)
+            const existingTab = existingGroup.tabs.find((t) => t.url === importedTab.url)
             if (!existingTab) {
               // 添加新标签
               existingGroup.tabs.push({
@@ -300,11 +306,11 @@ export function mergeImportedData(existingData: TabManagerStorage, importedSpace
     } else {
       // 添加新空间
       // 过滤掉没有 tabs 的分组
-      const filteredGroups = importedSpace.groups.filter(group => group.tabs.length > 0)
+      const filteredGroups = importedSpace.groups.filter((group) => group.tabs.length > 0)
       if (filteredGroups.length > 0) {
         mergedSpaces.push({
           ...importedSpace,
-          groups: filteredGroups
+          groups: filteredGroups,
         })
       } else {
         console.log(`Skipping space "${importedSpace.name}" because it has no groups with tabs`)
@@ -326,7 +332,7 @@ export function mergeImportedData(existingData: TabManagerStorage, importedSpace
 /**
  * 从文件导入数据（返回转换后的空间，不合并到存储）
  */
-export async function importData(file: File): Promise<{ spaces: Space[], maxOrder: number }> {
+export async function importData(file: File): Promise<{ spaces: Space[]; maxOrder: number }> {
   try {
     const text = await file.text()
     const spacesData = parseImportDataForConversion(text)
@@ -379,7 +385,10 @@ export function parseImportDataForConversion(text: string): any {
 /**
  * 导入并合并数据到现有存储
  */
-export async function importAndMergeData(file: File, existingData: TabManagerStorage): Promise<TabManagerStorage> {
+export async function importAndMergeData(
+  file: File,
+  existingData: TabManagerStorage,
+): Promise<TabManagerStorage> {
   try {
     // 解析导入文件
     const { spaces: importedSpaces } = await importData(file)

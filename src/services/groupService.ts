@@ -62,7 +62,7 @@ export async function createGroup(params: CreateGroupParams): Promise<Group | nu
 export async function updateGroup(
   spaceId: string,
   groupId: string,
-  params: UpdateGroupParams
+  params: UpdateGroupParams,
 ): Promise<Group | null> {
   const storage = await getStorage()
   const space = storage.spaces.find((s) => s.id === spaceId)
@@ -157,10 +157,10 @@ export async function reorderGroups(spaceId: string, groupIds: string[]): Promis
 export async function moveGroup(
   fromSpaceId: string,
   toSpaceId: string,
-  groupId: string
+  groupId: string,
 ): Promise<boolean> {
   const storage = await getStorage()
-  
+
   // 1. 查找源空间和分组
   const fromSpace = storage.spaces.find((s) => s.id === fromSpaceId)
   if (!fromSpace) return false
@@ -174,18 +174,18 @@ export async function moveGroup(
 
   // 3. 执行移动操作
   const [movingGroup] = fromSpace.groups.splice(groupIndex, 1)
-  
+
   // 更新分组所属空间 ID
   movingGroup.spaceId = toSpaceId
   movingGroup.updatedAt = Date.now()
-  
+
   // 确定目标空间中分组的新 order
   const maxOrder = toSpace.groups.reduce((max, group) => Math.max(max, group.order), -1)
   movingGroup.order = maxOrder + 1
-  
+
   // 添加到目标空间
   toSpace.groups.push(movingGroup)
-  
+
   // 更新空间更新时间
   fromSpace.updatedAt = Date.now()
   toSpace.updatedAt = Date.now()

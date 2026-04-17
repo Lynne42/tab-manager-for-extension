@@ -92,7 +92,6 @@ export async function initDemoData(): Promise<void> {
     }
   }
 
-
   // 设置第一个工作空间为激活状态
   if (workSpace) {
     await setActiveSpace(workSpace.id)

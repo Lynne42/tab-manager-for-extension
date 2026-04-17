@@ -3,7 +3,14 @@
  */
 
 import { useState, useRef } from 'react'
-import { exportData, generateExportFilename, importData, parseImportDataForConversion, calculateImportStats, mergeImportedData } from '../../utils/dataManager'
+import {
+  exportData,
+  generateExportFilename,
+  importData,
+  parseImportDataForConversion,
+  calculateImportStats,
+  mergeImportedData,
+} from '../../utils/dataManager'
 import { getStorage, setStorage } from '../../utils/storage'
 import Button from '@/atoms/Button'
 import ImportIcon from '@/assets/import.svg?react'
@@ -57,9 +64,17 @@ export default function ImportExportButtons({ loadSpaces }: ImportExportButtonsP
       const mergedData = mergeImportedData(currentData, importedSpaces)
       const existingSpacesCount = currentData.spaces.length
       const newSpacesCount = mergedData.spaces.length - existingSpacesCount
-      const newGroupsCount = importedSpaces.reduce((sum, space) => sum + space.groups.filter(g => g.tabs.length > 0).length, 0)
-      const newTabsCount = importedSpaces.reduce((sum, space) =>
-        sum + space.groups.reduce((groupSum, group) => groupSum + (group.tabs.length > 0 ? group.tabs.length : 0), 0)
+      const newGroupsCount = importedSpaces.reduce(
+        (sum, space) => sum + space.groups.filter((g) => g.tabs.length > 0).length,
+        0,
+      )
+      const newTabsCount = importedSpaces.reduce(
+        (sum, space) =>
+          sum +
+          space.groups.reduce(
+            (groupSum, group) => groupSum + (group.tabs.length > 0 ? group.tabs.length : 0),
+            0,
+          ),
       )
 
       // 构建导入确认消息
@@ -96,7 +111,9 @@ export default function ImportExportButtons({ loadSpaces }: ImportExportButtonsP
       loadSpaces()
 
       // 显示成功消息
-      alert(`Data imported successfully!\n\n${newSpacesCount} spaces, ${newGroupsCount} groups, ${newTabsCount} tabs added to your workspace.`)
+      alert(
+        `Data imported successfully!\n\n${newSpacesCount} spaces, ${newGroupsCount} groups, ${newTabsCount} tabs added to your workspace.`,
+      )
 
       setIsImporting(false)
     } catch (error) {

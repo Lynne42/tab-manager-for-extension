@@ -389,272 +389,13 @@
       ]
     },
     {
-      "name": "tools",
-      "description": "",
-      "icon": "workspace",
-      "color": "blue",
-      "groups": [
-        {
-          "name": "tools",
-          "tabs": [
-            {
-              "url": "https://ant-design.antgroup.com/components/dropdown-cn",
-              "title": "ant-design",
-              "favIconUrl": "https://ant-design.antgroup.com/favicon.ico",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://tailwindcss.com/docs/font-size",
-              "title": "Tailwind CSS",
-              "favIconUrl": "https://tailwindcss.com/favicon.ico",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://chatgpt.com/c/673d3d6c-3980-8008-b4e0-4a45c53996ea",
-              "title": "ChatGPT",
-              "favIconUrl": "https://chatgpt.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://date-fns.org/v4.1.0/docs/parse",
-              "title": "date-fns",
-              "favIconUrl": "https://date-fns.org/favicon.ico",
-              "description": "modern JavaScript date utility library",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "chrome://newtab/",
-              "title": "Toby",
-              "favIconUrl": "chrome://newtab/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "read",
-          "tabs": [
-            {
-              "url": "https://www.joshwcomeau.com/react/server-components/",
-              "title": "Josh个人网站-高质量的文章内容",
-              "favIconUrl": "https://www.joshwcomeau.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://janhesters.com/blog",
-              "title": "Jan Hesters高质量博客",
-              "favIconUrl": "https://janhesters.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "websit",
-          "tabs": [
-            {
-              "url": "https://www.freelancer.com/dashboard",
-              "title": "freelancer",
-              "favIconUrl": "https://www.freelancer.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "transform",
-          "description": "文件转换工具",
-          "color": "pink",
-          "tabs": [
-            {
-              "url": "https://word2md.com/",
-              "title": "Word to Markdown",
-              "favIconUrl": "https://word2md.com/favicon.ico",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Bookmarks",
-      "description": "",
-      "icon": "workspace",
-      "color": "blue",
-      "groups": [
-        {
-          "name": "dataStructures_algorithms",
-          "tabs": [
-            {
-              "url": "https://www.hello-algo.com/chapter_array_and_linkedlist/list/",
-              "title": "Hello 算法",
-              "favIconUrl": "https://www.hello-algo.com/favicon.ico",
-              "description": "算法",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://visualgo.net/zh",
-              "title": "动画可视化数据结构和算法",
-              "favIconUrl": "https://visualgo.net/favicon.ico",
-              "description": "通过动画可视化数据结构和算法- VisuAlgo",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "design_patterns",
-          "tabs": [
-            {
-              "url": "https://github.com/AllThingsSmitty/basic-design-patterns",
-              "title": "github:basic-design-patterns",
-              "favIconUrl": "https://github.com/favicon.ico",
-              "description": "JavaScript 中基本设计模式示例的集合🧰",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://jsdev.space/creational-design-patterns/",
-              "title": "创建型设计模式",
-              "favIconUrl": "https://jsdev.space/favicon.ico",
-              "description": "掌握 JavaScript 中的创建型设计模式：专家指南",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://jsdev.space/solid-design-principles/",
-              "title": "SOLID 设计原则",
-              "favIconUrl": "https://jsdev.space/favicon.ico",
-              "description": "开发人员知道的 SOLID 设计原则",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "typescript",
-          "tabs": [
-            {
-              "url": "https://www.geeksforgeeks.org/typescript/typescript-tutorial/",
-              "title": "TypeScript Tutorial",
-              "favIconUrl": "https://www.geeksforgeeks.org/favicon.ico",
-              "description": "TypeScript Tutorial - GeeksforGeeks",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://typehero.dev/challenge/hello-world",
-              "title": "Hello World | TypeHero",
-              "favIconUrl": "https://typehero.dev/favicon.ico",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://github.com/type-challenges/type-challenges?tab=readme-ov-file#play-locally",
-              "title": "TypeScript type challenges",
-              "favIconUrl": "https://github.com/favicon.ico",
-              "description": "type-challenges/type-challenges: Collection of TypeScript type challenges with online judge",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "javascript",
-          "tabs": [
-            {
-              "url": "https://javascript.info/async",
-              "title": "javascript.info",
-              "favIconUrl": "https://javascript.info/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://github.com/getify/You-Dont-Know-JS",
-              "title": "You-Dont-Know-JS",
-              "favIconUrl": "https://github.com/favicon.ico",
-              "description": "",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "web",
-          "tabs": [
-            {
-              "url": "https://2ality.com/2025/08/learning-web-dev-toc.html",
-              "title": "学习 Web 开发",
-              "favIconUrl": "https://2ality.com/favicon.ico",
-              "description": "新的博客文章系列：学习 Web 开发",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "backend",
-          "tabs": [
-            {
-              "url": "https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs",
-              "title": "Node.js",
-              "favIconUrl": "https://nodejs.org/favicon.ico",
-              "description": "Introduction to Node.js",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://www.mongodb.com/try/download/shell",
-              "title": "MongoDB",
-              "favIconUrl": "https://www.mongodb.com/favicon.ico",
-              "description": "MongoDB",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://expressjs.com/en/guide/debugging.html",
-              "title": "Express",
-              "favIconUrl": "https://expressjs.com/favicon.ico",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "database",
-          "tabs": [
-            {
-              "url": "https://prisma.org.cn/docs/orm/prisma-client/queries/aggregation-grouping-summarizing",
-              "title": "prisma",
-              "favIconUrl": "https://prisma.org.cn/favicon.ico",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "AI",
       "description": "AI tools",
       "icon": "workspace",
       "color": "blue",
       "groups": [
         {
-          "name": "学习网站",
+          "name": "AI网站",
           "description": "AI内容学习网站",
           "color": "blue",
           "tabs": [
@@ -665,11 +406,19 @@
               "description": "深度学习网站",
               "status": "idle",
               "pinned": false
+            },
+            {
+              "url": "https://huggingface.co/",
+              "title": "Hugging Face",
+              "favIconUrl": "https://huggingface.co/favicon.ico",
+              "description": "AI应用Hub, 包含模型，数据集等",
+              "status": "idle",
+              "pinned": false
             }
           ]
         },
         {
-          "name": "gemini",
+          "name": "google",
           "description": "gemini AI总览",
           "color": "blue",
           "tabs": [
@@ -704,6 +453,220 @@
               "description": "personal gemini settings, skills, mcp, context",
               "status": "idle",
               "pinned": false
+            },
+            {
+              "url": "https://notebooklm.google.com/",
+              "title": "notebooklm",
+              "favIconUrl": "https://notebooklm.google.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://blog.google/innovation-and-ai/technology/ai/",
+              "title": "Google Blog 资讯",
+              "favIconUrl": "https://blog.google/favicon.ico",
+              "description": "Google 所有的全栈和 AI Studio 更新",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "模型",
+          "description": "模型track",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://lmarena.ai",
+              "title": "lmarena",
+              "favIconUrl": "https://lmarena.ai/favicon.ico",
+              "description": "LLM模型强度实力实时排行榜",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://glama.ai/gateway/models",
+              "title": "glama-model-track",
+              "favIconUrl": "https://glama.ai/favicon.ico",
+              "description": "最全模型列表，常用的MCP工具",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://openrouter.ai/models",
+              "title": "openrouter",
+              "favIconUrl": "https://openrouter.ai/favicon.ico",
+              "description": "所有 API 模型统一列表",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/cheahjs/llm-leaderboard",
+              "title": "llm-leaderboard",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "LLM模型benchmark",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "skills",
+          "description": "技能市场",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://agentskills.io",
+              "title": "文档：agentskills 文档",
+              "favIconUrl": "https://agentskills.io/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://smithery.ai/skills",
+              "title": "技能市场：smithery 市场中的 skills",
+              "favIconUrl": "https://smithery.ai/favicon.ico",
+              "description": "使用smithery cli可以将skill适配到不同的Agent",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.theneuron.ai/top-tools/",
+              "title": "资讯：每日人工智能热门文章",
+              "favIconUrl": "https://www.theneuron.ai/favicon.ico",
+              "description": "每日人工智能热门文章",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/huggingface/skills",
+              "title": "技能集：hugging-face skills",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "hugging-face 官方skills",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/VoltAgent/awesome-agent-skills",
+              "title": "技能集：github/awesome-agent-skills",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "收录了由领先开发团队发布的官方技能，包括 Anthropic、Google Labs、Vercel、Stripe、Cloudflare、Netlify、Trail of Bits、Sentry、Expo、Hugging Face、Figma 等，以及社区自建技能",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/garrytan/gstack",
+              "title": "技能集：gstack 完整的AI 编程工作流",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "gstack 一共提供了 12 个 Skill，每个 Skill 对应一个专精角色——CEO、技术负责人、资深设计师、偏执的 Staff Engineer、发布工程师等它们覆盖了软件开发的完整生命周期：从想清楚做什么到上线后复盘。",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "MCP",
+          "description": "MCP server",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://smithery.ai/servers",
+              "title": "smithery MCP servers",
+              "favIconUrl": "https://smithery.ai/favicon.ico",
+              "description": "smithery市场中的MCP服务",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/modelcontextprotocol/servers",
+              "title": "github mcp servers",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "github mcp 服务列表",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/punkpeye/awesome-mcp-servers",
+              "title": "awesome-mcp-servers",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "github  punkpeye/awesome-mcp-servers 一个高质量的开源列表",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.pulsemcp.com/servers",
+              "title": "pulse mcp 应用市场",
+              "favIconUrl": "https://www.pulsemcp.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://registry.modelcontextprotocol.io/",
+              "title": "Official MCP Registry:",
+              "favIconUrl": "https://registry.modelcontextprotocol.io/favicon.ico",
+              "description": "MCP 官方维护的注册表",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://lobehub.com/mcp",
+              "title": "LobeHub MCP Directory",
+              "favIconUrl": "https://lobehub.com/favicon.ico",
+              "description": "包含直观的界面来浏览 Top 100 的 Gemini/Claude MCP 插件，并附带配置代码片段",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "想法 -> 代码页面",
+          "description": "生成式工具",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://lovable.dev/?utm_device=c&utm_source=google&utm_medium=paid_search_branded&utm_campaign=google-us-b2c-prospecting-evergreen-subscription-US+-+Search+-+Lovable+-+CORE&campaignid=23072209374&gad_source=1&gad_campaignid=23072209374&gbraid=0AAAAA-iIxGeKICVVx2qE5Rv9VL_4PsKDO&gclid=CjwKCAjw1tLOBhAMEiwAiPkRHgOeH6GUx4rmnGTRpSnls_QHKvC4g_1NynItrPQm3jrfRACRaJe9nxoCDQoQAvD_BwE",
+              "title": "依据想法生成页面",
+              "favIconUrl": "https://lovable.dev/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://aistudio.google.com/prompts/new_chat",
+              "title": "google AI Studio",
+              "favIconUrl": "https://aistudio.google.com/favicon.ico",
+              "description": "基于想法， 生成代码及页面",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "研发模式",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://github.com/github/spec-kit?tab=readme-ov-file",
+              "title": "SDD: spec-kit",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "SDD(Spec-Driven Development)",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/Fission-AI/OpenSpec/",
+              "title": "SDD: OpenSpec",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "SDD(Spec-Driven Development)",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/obra/superpowers",
+              "title": "superpowers",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "一整套研发工作流",
+              "status": "idle",
+              "pinned": false
             }
           ]
         }
@@ -715,21 +678,6 @@
       "icon": "workspace",
       "color": "blue",
       "groups": [
-        {
-          "name": "online-weekly",
-          "description": "每周资讯",
-          "color": "blue",
-          "tabs": [
-            {
-              "url": "https://tldr.tech/",
-              "title": "TLDR",
-              "favIconUrl": "https://tldr.tech/favicon.ico",
-              "description": "每周新闻简报",
-              "status": "idle",
-              "pinned": false
-            }
-          ]
-        },
         {
           "name": "online tools",
           "tabs": [
@@ -804,6 +752,309 @@
               "pinned": false
             }
           ]
+        },
+        {
+          "name": "技术类资讯",
+          "description": "每周资讯",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://tldr.tech/",
+              "title": "TLDR AI",
+              "favIconUrl": "https://tldr.tech/favicon.ico",
+              "description": "每周新闻简报",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.reddit.com/?feed=home",
+              "title": "reddit",
+              "favIconUrl": "https://www.reddit.com/favicon.ico",
+              "description": "社区",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://huggingface.co/blog",
+              "title": "Hugging Face Blog",
+              "favIconUrl": "https://huggingface.co/favicon.ico",
+              "description": "开源界的“中心广场”",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "产品类",
+          "description": "产品类资讯",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://www.producthunt.com/",
+              "title": "Product Hunt (AI 频道)",
+              "favIconUrl": "https://www.producthunt.com/favicon.ico",
+              "description": "新产品排行榜",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.rundown.ai/",
+              "title": "The Rundown AI",
+              "favIconUrl": "https://www.rundown.ai/favicon.ico",
+              "description": "AI 新闻通讯, 产品解读, 新工具快速了解",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.bensbites.com/",
+              "title": "bens bites",
+              "favIconUrl": "https://www.bensbites.com/favicon.ico",
+              "description": "博主从创始人的视角点评新出的 AI 玩具和生产力工具",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JS",
+      "icon": "workspace",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "文档",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://tms-outsource.com/cs/javascript-cheat-sheet/",
+              "title": "速查表",
+              "favIconUrl": "https://tms-outsource.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/getify/You-Dont-Know-JS",
+              "title": "You-Dont-Know-JS",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://javascript.info/async",
+              "title": "javascript.info",
+              "favIconUrl": "https://javascript.info/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "可视化",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://www.aicodingcoach.dev/learn?topicId=console-log",
+              "title": "可视化的JS AI Coding",
+              "favIconUrl": "https://www.aicodingcoach.dev/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "typescript",
+          "tabs": [
+            {
+              "url": "https://www.geeksforgeeks.org/typescript/typescript-tutorial/",
+              "title": "TypeScript Tutorial",
+              "favIconUrl": "https://www.geeksforgeeks.org/favicon.ico",
+              "description": "TypeScript Tutorial - GeeksforGeeks",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://typehero.dev/challenge/hello-world",
+              "title": "Hello World | TypeHero",
+              "favIconUrl": "https://typehero.dev/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/type-challenges/type-challenges?tab=readme-ov-file#play-locally",
+              "title": "TypeScript type challenges",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "type-challenges/type-challenges: Collection of TypeScript type challenges with online judge",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "web",
+          "tabs": [
+            {
+              "url": "https://2ality.com/2025/08/learning-web-dev-toc.html",
+              "title": "学习 Web 开发",
+              "favIconUrl": "https://2ality.com/favicon.ico",
+              "description": "新的博客文章系列：学习 Web 开发",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "tools",
+          "tabs": [
+            {
+              "url": "https://ant-design.antgroup.com/components/dropdown-cn",
+              "title": "ant-design",
+              "favIconUrl": "https://ant-design.antgroup.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://tailwindcss.com/docs/font-size",
+              "title": "Tailwind CSS",
+              "favIconUrl": "https://tailwindcss.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "read",
+          "tabs": [
+            {
+              "url": "https://www.joshwcomeau.com/react/server-components/",
+              "title": "Josh个人网站-高质量的文章内容",
+              "favIconUrl": "https://www.joshwcomeau.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://janhesters.com/blog",
+              "title": "Jan Hesters高质量博客",
+              "favIconUrl": "https://janhesters.com/favicon.ico",
+              "description": "",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "数据结构",
+      "icon": "workspace",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "dataStructures_algorithms",
+          "tabs": [
+            {
+              "url": "https://www.hello-algo.com/chapter_array_and_linkedlist/list/",
+              "title": "Hello 算法",
+              "favIconUrl": "https://www.hello-algo.com/favicon.ico",
+              "description": "算法",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://visualgo.net/zh",
+              "title": "动画可视化数据结构和算法",
+              "favIconUrl": "https://visualgo.net/favicon.ico",
+              "description": "通过动画可视化数据结构和算法- VisuAlgo",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "服务端",
+      "icon": "workspace",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "backend",
+          "tabs": [
+            {
+              "url": "https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs",
+              "title": "Node.js",
+              "favIconUrl": "https://nodejs.org/favicon.ico",
+              "description": "Introduction to Node.js",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.mongodb.com/try/download/shell",
+              "title": "MongoDB",
+              "favIconUrl": "https://www.mongodb.com/favicon.ico",
+              "description": "MongoDB",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://expressjs.com/en/guide/debugging.html",
+              "title": "Express",
+              "favIconUrl": "https://expressjs.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "database",
+          "tabs": [
+            {
+              "url": "https://prisma.org.cn/docs/orm/prisma-client/queries/aggregation-grouping-summarizing",
+              "title": "prisma",
+              "favIconUrl": "https://prisma.org.cn/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "设计模式",
+      "icon": "workspace",
+      "color": "blue",
+      "groups": [
+        {
+          "name": "design_patterns",
+          "tabs": [
+            {
+              "url": "https://github.com/AllThingsSmitty/basic-design-patterns",
+              "title": "github:basic-design-patterns",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "JavaScript 中基本设计模式示例的集合🧰",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://jsdev.space/creational-design-patterns/",
+              "title": "创建型设计模式",
+              "favIconUrl": "https://jsdev.space/favicon.ico",
+              "description": "掌握 JavaScript 中的创建型设计模式：专家指南",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://jsdev.space/solid-design-principles/",
+              "title": "SOLID 设计原则",
+              "favIconUrl": "https://jsdev.space/favicon.ico",
+              "description": "开发人员知道的 SOLID 设计原则",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
         }
       ]
     },
@@ -831,8 +1082,8 @@
       ]
     }
   ],
-  "activeSpaceId": "236fbfaf-8afe-4fb6-a98f-a0e8e64e0df2",
+  "activeSpaceId": "61ae4b58-dfb3-49c5-84e8-40de9a24c59c",
   "version": 2,
-  "exportTime": "2026-02-28T09:11:29.571Z",
+  "exportTime": "2026-04-17T02:55:21.133Z",
   "exportedFrom": "Tab Manager"
 }

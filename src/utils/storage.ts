@@ -33,7 +33,7 @@ export async function clearStorage(): Promise<void> {
  * 监听存储变化
  */
 export function onStorageChanged(
-  callback: (changes: { [key: string]: chrome.storage.StorageChange }) => void
+  callback: (changes: { [key: string]: chrome.storage.StorageChange }) => void,
 ): void {
   chrome.storage.onChanged.addListener((changes, areaName) => {
     if (areaName === 'local' && changes[STORAGE_KEY]) {

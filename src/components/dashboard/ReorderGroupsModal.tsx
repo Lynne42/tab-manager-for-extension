@@ -96,19 +96,17 @@ export default function ReorderGroupsModal({
       <div className="bg-gray-800 rounded-xl shadow-2xl w-full max-w-md border border-gray-700 overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-700 flex justify-between items-center bg-gray-800/50">
           <h3 className="text-lg font-bold text-white">Reorder Groups</h3>
-          <button 
-            onClick={onClose}
-            className="text-gray-400 hover:text-white transition-colors"
-          >
+          <button onClick={onClose} className="text-gray-400 hover:text-white transition-colors">
             ✕
           </button>
         </div>
 
         <div className="p-6 max-h-[60vh] overflow-y-auto">
           <p className="text-sm text-gray-400 mb-4">
-            Drag and drop to reorder groups in <span className="text-blue-400 font-medium">{space.name}</span>.
+            Drag and drop to reorder groups in{' '}
+            <span className="text-blue-400 font-medium">{space.name}</span>.
           </p>
-          
+
           <div className="space-y-2">
             {orderedGroups.map((group) => (
               <div
@@ -130,12 +128,8 @@ export default function ReorderGroupsModal({
                 <div className="text-gray-500">
                   <MoveIcon className="w-5 h-5" />
                 </div>
-                <div className="flex-1 font-medium text-gray-200">
-                  {group.name}
-                </div>
-                <div className="text-xs text-gray-500">
-                  {group.tabs.length} tabs
-                </div>
+                <div className="flex-1 font-medium text-gray-200">{group.name}</div>
+                <div className="text-xs text-gray-500">{group.tabs.length} tabs</div>
               </div>
             ))}
           </div>

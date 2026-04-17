@@ -11,13 +11,12 @@ interface HeaderProps {
 }
 
 export default function Header({ onNewSpace, loadSpaces }: HeaderProps) {
-
   return (
     <>
       <header className="shrink-0 bg-gray-800 border-b border-gray-700 px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logoIcon} alt="" width={40} height={40}/>
+            <img src={logoIcon} alt="" width={40} height={40} />
             <h1 className="text-2xl font-bold">Tab Manager</h1>
           </div>
           <div className="flex items-center gap-3">

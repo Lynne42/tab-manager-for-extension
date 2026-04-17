@@ -4,15 +4,15 @@
 
 import { useState } from 'react'
 import type { Space } from '../../types'
-import SpaceItem from './SpaceListItem';
-import SpaceCreate from './SpaceCreate';
+import SpaceItem from './SpaceListItem'
+import SpaceCreate from './SpaceCreate'
 import { reorderSpaces } from '../../services/spaceService'
 
 interface SpaceListProps {
   spaces: Space[]
   selectedSpaceId: string | null
   searchQuery: string
-  loadSpaces: () => void;
+  loadSpaces: () => void
   isDemoSpace: (space: Space) => boolean
   onSpaceClick: (spaceId: string) => void
   onDeleteSpace: (spaceId: string) => void
@@ -63,8 +63,8 @@ export default function SpaceList({
     }
 
     // 找到拖拽项和目标项的索引
-    const draggedIndex = spaces.findIndex(s => s.id === draggedSpaceId)
-    const targetIndex = spaces.findIndex(s => s.id === targetSpaceId)
+    const draggedIndex = spaces.findIndex((s) => s.id === draggedSpaceId)
+    const targetIndex = spaces.findIndex((s) => s.id === targetSpaceId)
 
     if (draggedIndex === -1 || targetIndex === -1) {
       setDraggedSpaceId(null)
@@ -72,7 +72,7 @@ export default function SpaceList({
     }
 
     // 创建新的空间顺序数组
-    const newSpaceIds = [...spaces.map(s => s.id)]
+    const newSpaceIds = [...spaces.map((s) => s.id)]
     const [removed] = newSpaceIds.splice(draggedIndex, 1)
     newSpaceIds.splice(targetIndex, 0, removed)
 
@@ -87,9 +87,10 @@ export default function SpaceList({
     setDraggedSpaceId(null)
   }
   // 过滤工作空间
-  const filteredSpaces = spaces.filter((space) =>
-    space.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    space.description?.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredSpaces = spaces.filter(
+    (space) =>
+      space.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      space.description?.toLowerCase().includes(searchQuery.toLowerCase()),
   )
 
   return (
@@ -104,9 +105,7 @@ export default function SpaceList({
             onChange={(e) => onSearchChange(e.target.value)}
             className="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
           />
-          <SpaceCreate
-            loadSpaces={loadSpaces}
-            onSpaceClick={onSpaceClick} />
+          <SpaceCreate loadSpaces={loadSpaces} onSpaceClick={onSpaceClick} />
         </div>
 
         <div className="text-xs text-gray-500 text-center">{spaces.length} spaces</div>
@@ -133,8 +132,8 @@ export default function SpaceList({
                   draggedSpaceId === space.id
                     ? 'opacity-50'
                     : dragOverSpaceId === space.id
-                    ? 'bg-gray-700'
-                    : 'hover:translate-x-1'
+                      ? 'bg-gray-700'
+                      : 'hover:translate-x-1'
                 } ${draggedSpaceId ? 'border border-dashed border-gray-600 rounded-lg p-2' : ''}`}
               >
                 <SpaceItem

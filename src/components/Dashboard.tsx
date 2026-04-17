@@ -20,8 +20,6 @@ export default function Dashboard() {
   const [searchQuery, setSearchQuery] = useState('')
   const [loading, setLoading] = useState(true)
 
-  
-
   // 加载所有工作空间
   const loadSpaces = async () => {
     setLoading(true)
@@ -187,7 +185,6 @@ export default function Dashboard() {
           )}
         </main>
       </div>
-
     </div>
   )
 }

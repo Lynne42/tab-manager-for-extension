@@ -1,0 +1,7 @@
+dist
+node_modules
+dist.zip
+public
+.claude
+.gemini
+.qodo
