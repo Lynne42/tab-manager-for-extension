@@ -12,5 +12,9 @@
     "16": "public/ico.png",
     "48": "public/ico.png",
     "128": "public/ico.png"
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
   }
 }

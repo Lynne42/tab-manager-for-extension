@@ -23,6 +23,7 @@ interface GroupItemProps {
   onMoveGroup: (group: any) => void
   onReorderTabs: (groupId: string, tabIds: string[]) => void
   onEditTabVisible: (spaceId: string, groupId: string, tabId: string) => void
+  isDragging?: boolean
 }
 
 export default function GroupItem({
@@ -39,12 +40,24 @@ export default function GroupItem({
   onMoveGroup,
   onReorderTabs,
   onEditTabVisible,
+  isDragging,
 }: GroupItemProps) {
   return (
-    <div className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-gray-600 transition-colors">
+    <div
+      className={`bg-gray-800 rounded-lg overflow-hidden border transition-all ${
+        isDragging
+          ? 'border-blue-500/50 bg-gray-700/50 opacity-40'
+          : 'border-gray-700 hover:border-gray-600'
+      }`}
+    >
       {/* Group 头部 */}
       <div className="p-4">
         <div className="flex items-center gap-3">
+          {/* 拖拽手柄 */}
+          <div className="flex-shrink-0 cursor-move text-gray-500 hover:text-gray-300 transition-colors">
+            <MoveIcon className="w-5 h-5" />
+          </div>
+
           {/* 展开/收起按钮 */}
           <button onClick={() => onGroupToggle(spaceId, group.id)} className="flex-shrink-0">
             <svg

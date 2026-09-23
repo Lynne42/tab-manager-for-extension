@@ -414,58 +414,247 @@
               "description": "AI应用Hub, 包含模型，数据集等",
               "status": "idle",
               "pinned": false
+            },
+            {
+              "url": "https://www.theneuron.ai/top-tools/",
+              "title": "资讯：每日人工智能热门文章",
+              "favIconUrl": "https://www.theneuron.ai/favicon.ico",
+              "description": "每日人工智能热门文章",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://ruben.substack.com/",
+              "title": "claude:如何实现人工智能",
+              "favIconUrl": "https://ruben.substack.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
             }
           ]
         },
         {
-          "name": "google",
-          "description": "gemini AI总览",
+          "name": "系统提示词",
+          "description": "https://github.com/NTCoding/claude-skillz/blob/main/system-prompts/prd-expert.md",
           "color": "blue",
           "tabs": [
             {
-              "url": "https://gemini.google.com/",
-              "title": "gemini chat",
-              "favIconUrl": "https://gemini.google.com/favicon.ico",
-              "description": "gemini chat web site",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://geminicli.com/docs/cli/skills/",
-              "title": "gemini cli docs",
-              "favIconUrl": "https://geminicli.com/favicon.ico",
-              "description": "gemini cli docs site",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://antigravity.google/docs/get-started",
-              "title": "Antigravity docs",
-              "favIconUrl": "https://antigravity.google/favicon.ico",
-              "description": "Antigravity docs site",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://github.com/Lynne42/skills-template/tree/main/gemini",
-              "title": "personal gemini settings",
+              "url": "https://github.com/NTCoding/claude-skillz",
+              "title": "技能+系统提示",
               "favIconUrl": "https://github.com/favicon.ico",
-              "description": "personal gemini settings, skills, mcp, context",
+              "description": "可重用技能和可组合系统提示",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://notebooklm.google.com/",
-              "title": "notebooklm",
-              "favIconUrl": "https://notebooklm.google.com/favicon.ico",
+              "url": "https://github.com/msitarzewski/agency-agents",
+              "title": "角色：msitarzewski/agency-agents 智能体角色代理集合",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "AI 代理角色集合",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "skills",
+          "description": "技能市场",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://agentskills.io",
+              "title": "文档：agentskills 文档",
+              "favIconUrl": "https://agentskills.io/favicon.ico",
+              "description": "Agent Skills 开放标准的官方页面，描述是skill是什么，如何写好一个skill",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://blog.google/innovation-and-ai/technology/ai/",
-              "title": "Google Blog 资讯",
-              "favIconUrl": "https://blog.google/favicon.ico",
-              "description": "Google 所有的全栈和 AI Studio 更新",
+              "url": "https://skills.sh/",
+              "title": "skill.sh",
+              "favIconUrl": "https://skills.sh/favicon.ico",
+              "description": "skills集合",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://smithery.ai/skills",
+              "title": "技能市场：smithery 市场中的 skills",
+              "favIconUrl": "https://smithery.ai/favicon.ico",
+              "description": "使用smithery cli可以将skill适配到不同的Agent",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://atmos.tools/ai/skill-marketplace",
+              "title": "技能市场：skill-marketplace",
+              "favIconUrl": "https://atmos.tools/favicon.ico",
+              "description": "Atmos AI 技能市场让您可以安装、分享和使用来自 GitHub 代码库的社区创建的 AI 技能。已安装的技能会存储在~/.atmos/skills/TUI 技能选择器（Ctrl+A）中并显示在其中",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/mattpocock/skills",
+              "title": "技能集: mattpocock/skills",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "拒绝盲目的“感觉编程（vibe coding）”，将传统的软件工程最佳实践注入 AI 代理",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/VoltAgent/awesome-agent-skills",
+              "title": "技能集：awesome-agent-skills",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "领先开发团队发布的官方技能集合：包括 Anthropic、Google Labs、Vercel、Stripe、Cloudflare、Netlify、Trail of Bits、Sentry、Expo、Hugging Face、Figma 等，以及社区自建技能",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/affaan-m/everything-claude-code",
+              "title": "集合：everything-claude-code",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "大集合：Agent、skills、hooks等",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/addyosmani/agent-skills",
+              "title": "技能集：agent-skills",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "由 Google Chrome 团队的 Addy Osmani 打造，旨在把原型级别的 AI 代码转化为达到“生产级（Production-grade）”标准的软件\n。它将 Google 工程文化（如《Google 软件工程》中的经验）直接转化为 AI 必须遵守的工作流",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/huggingface/skills",
+              "title": "技能集：hugging-face skills",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "hugging-face 官方skills",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/garrytan/gstack",
+              "title": "工作流编排集：gstack 完整的AI 编程工作流",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "核心是将 AI 代理转化为一个虚拟的软件工程团队。gstack 一共提供了 12 个 Skill，每个 Skill 对应一个专精角色——CEO、技术负责人、资深设计师、偏执的 Staff Engineer、发布工程师等它们覆盖了软件开发的完整生命周期：从想清楚做什么到上线后复盘。",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://skillsmp.com/zh",
+              "title": "生态：Agent Skills Marketplace",
+              "favIconUrl": "https://skillsmp.com/favicon.ico",
+              "description": "Agent Skills Marketplace\n基于开放的 SKILL.md 生态系统",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/alchaincyf/darwin-skill",
+              "title": "评估：skill技能评估",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "一个让你的Skill无限进化的系统：评估→改进→测试→保留或回滚",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+              "title": "创建|评估：skill-creator",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "claude出的，用于skill创建，升级和评估的技能",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
+          "name": "UI-UX",
+          "description": "设计",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://github.com/VoltAgent/awesome-design-md",
+              "title": "设计规范集：awesome-design-md",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "一系列受流行品牌设计系统启发而设计的 DESIGN.md 文件。只需将其中一个文件拖放到您的项目中，即可让代码生成器生成匹配的用户界面",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/google-labs-code/design.md",
+              "title": "规范：google-labs-code/design.md",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "DESIGN.md 是一种用于向编码代理描述视觉标识的格式规范。它使代理能够持久、结构化地理解设计系统。",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://getdesign.md/design-md",
+              "title": "设计模板：getdesign",
+              "favIconUrl": "https://getdesign.md/favicon.ico",
+              "description": "将一个项目拖放到你的项目中，即可让编码代理构建匹配的用户界面。\n以真正的深度构建，实现高质量的用户界面生成——而非流于表面。",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://designmd.ai/",
+              "title": "设计模板：Designmd",
+              "favIconUrl": "https://designmd.ai/favicon.ico",
+              "description": "100s of free design systems for\nAI-powered development",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://www.getdesign.app/",
+              "title": "提取：根据提供的网页生成design.md 文件",
+              "favIconUrl": "https://www.getdesign.app/favicon.ico",
+              "description": "getdesign 会在真实的浏览器中打开网站，提取调色板、字体和组件，并返回一个基于网站实际 CSS 的生产级design.md 文件",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://designmd.ai/",
+              "title": "设计风格集",
+              "favIconUrl": "https://designmd.ai/favicon.ico",
+              "description": "100+ 免费设计系统用于\n人工智能驱动的发展",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/google-labs-code/stitch-skills",
+              "title": "UI-Code: stitch-skills",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "一个专为与 Stitch MCP 服务器配合使用而设计的代理技能库。每个技能都遵循代理技能开放标准，以兼容 Antigravity、Gemini CLI、Claude Code、Cursor 等编码代理",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.md",
+              "title": "ui-ux-pro-max-skill ：全能设计助手",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://frontend-design-skills-showcase.pages.dev/",
+              "title": "设计：前端设计 Skills",
+              "favIconUrl": "https://frontend-design-skills-showcase.pages.dev/favicon.ico",
+              "description": "前端设计 Skills 大横评\n\n150 个页面 · 14 种设计来源 · 3 个产品场景 · 4 个模型",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/VoltAgent/awesome-design-md",
+              "title": "设计：awesome-design-md",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "design.md，收藏了多个平台的设计文档",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/nexu-io/open-design",
+              "title": "设计：open-design",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "description": "开源的 Claude Design 替代方案，可替代 Anthropic 的 Claude Design",
               "status": "idle",
               "pinned": false
             }
@@ -511,54 +700,52 @@
           ]
         },
         {
-          "name": "skills",
-          "description": "技能市场",
+          "name": "想法 -> 代码页面",
+          "description": "生成式工具",
           "color": "blue",
           "tabs": [
             {
-              "url": "https://agentskills.io",
-              "title": "文档：agentskills 文档",
-              "favIconUrl": "https://agentskills.io/favicon.ico",
+              "url": "https://lovable.dev/?utm_device=c&utm_source=google&utm_medium=paid_search_branded&utm_campaign=google-us-b2c-prospecting-evergreen-subscription-US+-+Search+-+Lovable+-+CORE&campaignid=23072209374&gad_source=1&gad_campaignid=23072209374&gbraid=0AAAAA-iIxGeKICVVx2qE5Rv9VL_4PsKDO&gclid=CjwKCAjw1tLOBhAMEiwAiPkRHgOeH6GUx4rmnGTRpSnls_QHKvC4g_1NynItrPQm3jrfRACRaJe9nxoCDQoQAvD_BwE",
+              "title": "依据想法生成页面",
+              "favIconUrl": "https://lovable.dev/favicon.ico",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://smithery.ai/skills",
-              "title": "技能市场：smithery 市场中的 skills",
-              "favIconUrl": "https://smithery.ai/favicon.ico",
-              "description": "使用smithery cli可以将skill适配到不同的Agent",
+              "url": "https://aistudio.google.com/prompts/new_chat",
+              "title": "google AI Studio",
+              "favIconUrl": "https://aistudio.google.com/favicon.ico",
+              "description": "基于想法， 生成代码及页面",
               "status": "idle",
               "pinned": false
-            },
+            }
+          ]
+        },
+        {
+          "name": "研发模式",
+          "color": "blue",
+          "tabs": [
             {
-              "url": "https://www.theneuron.ai/top-tools/",
-              "title": "资讯：每日人工智能热门文章",
-              "favIconUrl": "https://www.theneuron.ai/favicon.ico",
-              "description": "每日人工智能热门文章",
-              "status": "idle",
-              "pinned": false
-            },
-            {
-              "url": "https://github.com/huggingface/skills",
-              "title": "技能集：hugging-face skills",
+              "url": "https://github.com/github/spec-kit?tab=readme-ov-file",
+              "title": "SDD: spec-kit",
               "favIconUrl": "https://github.com/favicon.ico",
-              "description": "hugging-face 官方skills",
+              "description": "SDD(Spec-Driven Development)",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://github.com/VoltAgent/awesome-agent-skills",
-              "title": "技能集：github/awesome-agent-skills",
+              "url": "https://github.com/Fission-AI/OpenSpec/",
+              "title": "SDD: OpenSpec",
               "favIconUrl": "https://github.com/favicon.ico",
-              "description": "收录了由领先开发团队发布的官方技能，包括 Anthropic、Google Labs、Vercel、Stripe、Cloudflare、Netlify、Trail of Bits、Sentry、Expo、Hugging Face、Figma 等，以及社区自建技能",
+              "description": "SDD(Spec-Driven Development)",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://github.com/garrytan/gstack",
-              "title": "技能集：gstack 完整的AI 编程工作流",
+              "url": "https://github.com/obra/superpowers",
+              "title": "superpowers",
               "favIconUrl": "https://github.com/favicon.ico",
-              "description": "gstack 一共提供了 12 个 Skill，每个 Skill 对应一个专精角色——CEO、技术负责人、资深设计师、偏执的 Staff Engineer、发布工程师等它们覆盖了软件开发的完整生命周期：从想清楚做什么到上线后复盘。",
+              "description": "一整套研发工作流",
               "status": "idle",
               "pinned": false
             }
@@ -615,56 +802,81 @@
               "description": "包含直观的界面来浏览 Top 100 的 Gemini/Claude MCP 插件，并附带配置代码片段",
               "status": "idle",
               "pinned": false
-            }
-          ]
-        },
-        {
-          "name": "想法 -> 代码页面",
-          "description": "生成式工具",
-          "color": "blue",
-          "tabs": [
-            {
-              "url": "https://lovable.dev/?utm_device=c&utm_source=google&utm_medium=paid_search_branded&utm_campaign=google-us-b2c-prospecting-evergreen-subscription-US+-+Search+-+Lovable+-+CORE&campaignid=23072209374&gad_source=1&gad_campaignid=23072209374&gbraid=0AAAAA-iIxGeKICVVx2qE5Rv9VL_4PsKDO&gclid=CjwKCAjw1tLOBhAMEiwAiPkRHgOeH6GUx4rmnGTRpSnls_QHKvC4g_1NynItrPQm3jrfRACRaJe9nxoCDQoQAvD_BwE",
-              "title": "依据想法生成页面",
-              "favIconUrl": "https://lovable.dev/favicon.ico",
-              "status": "idle",
-              "pinned": false
             },
             {
-              "url": "https://aistudio.google.com/prompts/new_chat",
-              "title": "google AI Studio",
-              "favIconUrl": "https://aistudio.google.com/favicon.ico",
-              "description": "基于想法， 生成代码及页面",
+              "url": "https://mcp.so/",
+              "title": "市场：mcp.so",
+              "favIconUrl": "https://mcp.so/favicon.ico",
+              "description": "优秀的MCP服务器和客户端",
               "status": "idle",
               "pinned": false
             }
           ]
         },
         {
-          "name": "研发模式",
+          "name": "google",
+          "description": "gemini AI总览",
           "color": "blue",
           "tabs": [
             {
-              "url": "https://github.com/github/spec-kit?tab=readme-ov-file",
-              "title": "SDD: spec-kit",
-              "favIconUrl": "https://github.com/favicon.ico",
-              "description": "SDD(Spec-Driven Development)",
+              "url": "https://gemini.google.com/",
+              "title": "gemini chat",
+              "favIconUrl": "https://gemini.google.com/favicon.ico",
+              "description": "gemini chat web site",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://github.com/Fission-AI/OpenSpec/",
-              "title": "SDD: OpenSpec",
-              "favIconUrl": "https://github.com/favicon.ico",
-              "description": "SDD(Spec-Driven Development)",
+              "url": "https://geminicli.com/docs/cli/skills/",
+              "title": "gemini cli docs",
+              "favIconUrl": "https://geminicli.com/favicon.ico",
+              "description": "gemini cli docs site",
               "status": "idle",
               "pinned": false
             },
             {
-              "url": "https://github.com/obra/superpowers",
-              "title": "superpowers",
+              "url": "https://antigravity.google/docs/get-started",
+              "title": "Antigravity docs",
+              "favIconUrl": "https://antigravity.google/favicon.ico",
+              "description": "Antigravity docs site",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/Lynne42/skills-template/tree/main/gemini",
+              "title": "personal gemini settings",
               "favIconUrl": "https://github.com/favicon.ico",
-              "description": "一整套研发工作流",
+              "description": "personal gemini settings, skills, mcp, context",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://notebooklm.google.com/",
+              "title": "notebooklm",
+              "favIconUrl": "https://notebooklm.google.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://blog.google/innovation-and-ai/technology/ai/",
+              "title": "Google Blog 资讯",
+              "favIconUrl": "https://blog.google/favicon.ico",
+              "description": "Google 所有的全栈和 AI Studio 更新",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://github.com/orgs/google-labs-code/repositories",
+              "title": "github:google-labs-code",
+              "favIconUrl": "https://github.com/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://codewiki.google/",
+              "title": "code wiki",
+              "favIconUrl": "https://codewiki.google/favicon.ico",
+              "description": "根据给定的代码仓库，生成代码知识库",
               "status": "idle",
               "pinned": false
             }
@@ -781,6 +993,14 @@
               "description": "开源界的“中心广场”",
               "status": "idle",
               "pinned": false
+            },
+            {
+              "url": "https://newsletter.techworld-with-milan.com/",
+              "title": "科技世界简讯",
+              "favIconUrl": "https://newsletter.techworld-with-milan.com/favicon.ico",
+              "description": "软件工程模式和原则\n技术领导力和团队动力\n工程师的职业发展",
+              "status": "idle",
+              "pinned": false
             }
           ]
         },
@@ -819,6 +1039,7 @@
     },
     {
       "name": "JS",
+      "description": "",
       "icon": "workspace",
       "color": "blue",
       "groups": [
@@ -949,6 +1170,7 @@
     },
     {
       "name": "数据结构",
+      "description": "",
       "icon": "workspace",
       "color": "blue",
       "groups": [
@@ -977,6 +1199,7 @@
     },
     {
       "name": "服务端",
+      "description": "",
       "icon": "workspace",
       "color": "blue",
       "groups": [
@@ -1024,6 +1247,7 @@
     },
     {
       "name": "设计模式",
+      "description": "",
       "icon": "workspace",
       "color": "blue",
       "groups": [
@@ -1082,8 +1306,8 @@
       ]
     }
   ],
-  "activeSpaceId": "61ae4b58-dfb3-49c5-84e8-40de9a24c59c",
+  "activeSpaceId": "ddfc78f9-c46f-4d48-9f97-ad9a4b688fe8",
   "version": 2,
-  "exportTime": "2026-04-17T02:55:21.133Z",
+  "exportTime": "2026-06-01T03:04:01.669Z",
   "exportedFrom": "Tab Manager"
 }

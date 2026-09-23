@@ -352,6 +352,7 @@ export default function SpaceDetail({
           onMoveTab={handleStartMoveTab}
           onMoveGroup={handleStartMoveGroup}
           onReorderTabs={handleReorderTabs}
+          onReorderGroups={handleSaveReorder}
           onEditTabVisible={() => {}}
         />
       </div>
