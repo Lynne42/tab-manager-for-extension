@@ -17,6 +17,9 @@ make dev
 
 # 查阅全量工程执行流手册
 make help
+
+# 打包dist,以便在Chrome扩展中加载dist
+make build
 ```
 
 ## 📖 语义化文档树 (Documentation Structure)

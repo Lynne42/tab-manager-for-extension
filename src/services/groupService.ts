@@ -23,7 +23,9 @@ export async function getGroupById(spaceId: string, groupId: string): Promise<Gr
 }
 
 /**
- * 创建分组
+ * 创建分组，新分组插入到所属空间分组列表的第一位
+ * @param {CreateGroupParams} params - 创建参数，spaceId 必填
+ * @returns {Promise<Group | null>} 新建的分组；空间不存在时返回 null
  */
 export async function createGroup(params: CreateGroupParams): Promise<Group | null> {
   const storage = await getStorage()
@@ -32,7 +34,11 @@ export async function createGroup(params: CreateGroupParams): Promise<Group | nu
   if (spaceIndex === -1) return null
 
   const space = storage.spaces[spaceIndex]
-  const maxOrder = space.groups.reduce((max, group) => Math.max(max, group.order), 0)
+
+  // UI 按 order 升序渲染：已有分组整体后移一位，新分组占用 order 0
+  space.groups.forEach((group) => {
+    group.order += 1
+  })
 
   const now = Date.now()
   const newGroup: Group = {
@@ -44,12 +50,12 @@ export async function createGroup(params: CreateGroupParams): Promise<Group | nu
     color: params.color,
     tabs: [],
     expanded: true,
-    order: maxOrder + 1,
+    order: 0,
     createdAt: now,
     updatedAt: now,
   }
 
-  space.groups.push(newGroup)
+  space.groups.unshift(newGroup)
   space.updatedAt = now
 
   await setStorage(storage)

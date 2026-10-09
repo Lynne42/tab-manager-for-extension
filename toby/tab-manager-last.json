@@ -62,6 +62,79 @@
       "color": "blue",
       "groups": [
         {
+          "name": "NexToken",
+          "description": "安全Token",
+          "color": "blue",
+          "tabs": [
+            {
+              "url": "https://axonhub.vm-dev.dev.realai-inc.cn/",
+              "title": "原型",
+              "favIconUrl": "https://axonhub.vm-dev.dev.realai-inc.cn/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://nex-token-ax.nextoken-dev.dev.realai-inc.cn/models",
+              "title": "管理后台-开发环境",
+              "favIconUrl": "https://nex-token-ax.nextoken-dev.dev.realai-inc.cn/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://nextoken.nextoken-dev.dev.realai-inc.cn",
+              "title": "用户侧 - 开发环境",
+              "favIconUrl": "https://nextoken.nextoken-dev.dev.realai-inc.cn/favicon.ico",
+              "description": "开发环境地址",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://nex-token-ax.nextoken-test.dev.realai-inc.cn/models",
+              "title": "管理后台 - 测试环境",
+              "favIconUrl": "https://nex-token-ax.nextoken-test.dev.realai-inc.cn/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://nextoken.nextoken-test.dev.realai-inc.cn",
+              "title": "用户侧 - 测试环境",
+              "favIconUrl": "https://nextoken.nextoken-test.dev.realai-inc.cn/favicon.ico",
+              "description": "测试环境地址",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://nextoken.real-ai.cn/",
+              "title": "线上环境",
+              "favIconUrl": "https://nextoken.real-ai.cn/favicon.ico",
+              "description": "https://nextoken.real-ai.cn/   面向用户  \nhttps://api.nextoken.real-ai.cn/    管理后台",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://realai.feishu.cn/wiki/LKylwfwUJioco6kVvkVcMmymnAf?table=tblNB2dMaNm4Kb9G&view=vewRgMaMBt",
+              "title": "Bug 列表",
+              "favIconUrl": "https://realai.feishu.cn/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://nextoken-login-prototype-20260915.remeyo900.chatgpt.site/",
+              "title": "设计：登录页面",
+              "favIconUrl": "https://nextoken-login-prototype-20260915.remeyo900.chatgpt.site/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            },
+            {
+              "url": "https://nextoken-login-prototype-20260915.remeyo900.chatgpt.site/invite",
+              "title": "设计：邀请注册页面",
+              "favIconUrl": "https://nextoken-login-prototype-20260915.remeyo900.chatgpt.site/favicon.ico",
+              "status": "idle",
+              "pinned": false
+            }
+          ]
+        },
+        {
           "name": "北京移动",
           "tabs": [
             {
@@ -1306,8 +1379,8 @@
       ]
     }
   ],
-  "activeSpaceId": "ddfc78f9-c46f-4d48-9f97-ad9a4b688fe8",
+  "activeSpaceId": "cbdade93-9984-41bc-a663-b12274ef3e0e",
   "version": 2,
-  "exportTime": "2026-06-01T03:04:01.669Z",
+  "exportTime": "2026-10-09T07:46:00.195Z",
   "exportedFrom": "Tab Manager"
 }
